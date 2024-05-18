@@ -512,6 +512,8 @@ img{
 	font-weight: 600;
 	font-family: Noto Sans,sans-serif;
 	line-height: 38.4px;
+	padding-left:16px;
+	padding-right:16px;
 }
 .content06-text{
 	display: flex;
