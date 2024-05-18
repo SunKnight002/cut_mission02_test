@@ -1,0 +1,1485 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    max-width:100%;
+    height:auto;
+	display: block;
+}
+*,*::before,*::after{
+	box-sizing:border-box;
+}
+
+.warp{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+/*你好，冒險者，以下是header區域*/
+
+
+.header{
+	background: #fff;
+	display: flex;
+	align-items: center;
+}
+.headerLogo{
+	padding-left: 312px;
+	padding-right: 318px;
+	padding-top: 28px;
+	padding-bottom: 28px;
+}
+
+.headerUL{
+	display: flex;
+    justify-content: center;
+	align-items: center;
+}
+
+.headerUL li{
+	padding-top: 32px;
+	padding-bottom: 32px;
+	padding-right: 40px;
+}
+.headerUL li a{
+	width: 48px;
+	color: #000;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+}
+.headerUL a{
+	text-decoration: none;
+	color: #000;
+}
+
+/*你好，冒險者，以下是content01區域*/
+
+.content01{
+	display: flex;
+	flex-direction:row-reverse;
+	justify-content: space-between;
+}
+
+.content01-Limg{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.content01-Limg img{
+	padding-right: 24px;
+	padding-bottom: 256px;
+}
+.content01-img img{
+	padding-left: 24px;
+}
+.content01-Text{
+	padding-left: 250px;
+}
+.content01-Text-lg{
+	color: #3B3B3B;
+	font-family: "noto sans", sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 48px;
+	padding-bottom: 24px;
+	padding-top: 248px;
+}
+.content01-Text-mid{
+	color: #5B5B5B;
+	font-family: "noto sans", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	padding-bottom: 8px;
+}
+
+.content01-Text-sm{
+	color: #C1C1C1;
+	font-family: "noto sans", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	padding-bottom: 60px;
+	padding-right: 24px;
+}
+.content01_bottom{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*你好，冒險者，以下是content02區域，也就是作品介紹區域*/
+
+.content02{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	padding-top: 120px;
+	padding-bottom: 80px;
+}
+
+.content02 h2{
+	color: #000;
+	font-family: "noto sans", sans-serif;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 38.4px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+
+/*你好，冒險者，以下是content03區域，也就是星際旅行區域*/
+
+
+.content03{
+	border: 1px solid green;
+	position: relative; 
+}
+
+.content03::before {
+	content:'';
+	position: absolute;
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	/*background-image: url("https://i.postimg.cc/Zq93vSw3/homepage-work1-bg.png");*/
+	background-image: url("../img/homepage-work1-bg.png");
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+.content03-imgText{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5); /* 半透明的黑色遮罩 */
+	position: relative;
+}
+.content03-img{
+	padding-top: 80px;
+	padding-right: 50px;
+}
+.content03-Text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items:flex-start;
+	background: #fff;
+	background-color: rgba(255, 255, 255, 20%);
+	border-radius: 24px;
+	padding-left: 40px;
+	height: 400px;
+}
+.White-Line-03{
+	width: 440px;
+	height: 1px;
+	border-top: solid #fff 2px;
+	padding-bottom: 40px;
+}
+.Introduction-BTN-03{
+	width: 176px;
+	height: 62px;
+	background: #000000;
+	border-radius: 5px;
+	margin-left: 130px;
+}
+.Introduction-BTN-P-03{
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	font-weight: 700;
+	margin-top: 16px;
+}
+.content03-Text h3{
+	color: #fff;
+	font-family: "noto sans", sans-serif;
+	font-size:28px ;
+	font-weight:700;
+	line-height:33.6px ;
+	padding-top: 80px;
+	padding-right: 262px;
+}
+.content03-Text-P{
+	color: #fff;
+	font-family: "noto sans", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	padding-top: 8px;
+}
+.content03-Text ul{
+	padding-top: 24px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.content03-Text li{
+	width: 100px;
+	color: #3B3B3B;
+	background: #fff;
+	border-radius: 16px;
+	border: 1px solid powderblue;
+}
+.content03-Text a{
+	color: #3B3B3B;
+	text-align: center;
+	font-family: "noto sans", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-decoration: none;
+	padding-right: 18px;
+	padding-bottom: 40px;
+}
+
+
+/*你好，冒險者，以下是content04區域，也就是理財APP區域*/
+
+
+.content04{
+	display: flex;
+	background-image: url("../img/homepage-work2-lg.png");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	height: 800px;
+}
+
+.content04-Text{
+	background: #FFFFFF1A;
+	background-color: rgba(255, 255, 255, 10%);
+	border-radius: 24px;
+	height: 400px;
+}
+
+.White-Line-04{
+	width: 440px;
+	height: 1px;
+	border-top: solid #fff 2px;
+	padding-bottom: 40px;
+	margin-left: 40px;
+}
+.Introduction-BTN-04{
+	width: 176px;
+	height: 62px;
+	background: #000000;
+	border-radius: 5px;
+	margin-left: 160px;
+	margin-bottom: 56px;
+}
+.Introduction-BTN-P-04{
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	font-weight: 700;
+	margin-top: 0px;
+	padding-top: 16px;
+}
+
+.content04-imgText{
+	width: 948px;
+	background: #0A101380;
+	background-color: rgba(10, 16, 19, 50%);
+	padding-top: 200px;
+	padding-left: 312px;
+	padding-right: 110px;
+	padding-bottom: 200px;
+}
+.content04-Text h4{
+	color: #fff;
+	font-family: "noto sans", sans-serif;
+	font-size:28px ;
+	font-weight:700;
+	line-height:33.6px ;
+	padding-left: 40px;
+	padding-top: 80px;
+	padding-right: 262px;
+}
+.content04-Text-P{
+	color: #fff;
+	font-family: "noto sans", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	padding-top: 8px;
+	padding-left: 40px;
+}
+.content04-Text ul{
+	padding-top: 24px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 40px;
+}
+.content04-Text li{
+	width: 100px;
+	color: #3B3B3B;
+	background: #fff;
+	border-radius: 16px;
+}
+.content04-Text a{
+	color: #3B3B3B;
+	text-align: center;
+	font-family: "noto sans", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-decoration: none;
+	padding-right: 18px;
+	padding-bottom: 40px;
+}
+
+/*你好，冒險者，以下是content05區域，也就是醫療美容區域*/
+
+.content05{
+	position: relative; 
+}
+
+.content05::before {
+	content:'';
+	position: absolute;
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	/*background-image: url("https://i.postimg.cc/Zq93vSw3/homepage-work1-bg.png");*/
+	background-image: url("../img/homepage-work3-bg.png");
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+
+.White-Line-05{
+	width: 440px;
+	height: 1px;
+	border-top: solid #fff 2px;
+	padding-bottom: 40px;
+	margin-left: 5px;
+	margin-right: 55px;
+}
+.Introduction-BTN-05{
+	width: 176px;
+	height: 62px;
+	background: #000000;
+	border-radius: 5px;
+	margin-left: 135px;
+	margin-bottom: 56px;
+}
+.Introduction-BTN-P-05{
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	font-weight: 700;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.content05-imgText{
+	background-color: rgba(0, 0, 0, 0.5); /* 半透明的黑色遮罩 */
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content05-img{
+	padding-top: 176px;
+	padding-right: 49px;
+	padding-bottom: 112px;
+}
+.content05-Text{
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	background-color: rgba(255, 255, 255, 20%);
+	border-radius: 24px;
+	height: 400px;
+	padding-left: 55px;
+	padding-bottom: 200px;
+	padding-left: 40px;
+}
+.content05-Text h4{
+	color: #fff;
+	font-family: "noto sans", sans-serif;
+	font-size:28px ;
+	font-weight:700;
+	line-height:33.6px ;
+	padding-top: 80px;
+	padding-right: 262px;
+}
+.content05-Text-P{
+	color: #fff;
+	font-family: "noto sans", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	padding-top: 8px;
+}
+.content05-Text ul{
+	padding-top: 24px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.content05-Text li{
+	width: 100px;
+	color: #3B3B3B;
+	background: #fff;
+	border-radius: 16px;
+	border: 1px solid powderblue;
+}
+.content05-Text a{
+	color: #3B3B3B;
+	text-align: center;
+	font-family: "noto sans", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-decoration: none;
+	padding-right: 18px;
+	padding-bottom: 40px;
+}
+
+/*你好，冒險者，以下是content06區域，也就是服務項目區域*/
+
+
+.content06{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../img/homepage-services-bg.png");
+	width:100%;
+	height: 800px;
+}
+.content06-title{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	padding-top: 120px;
+	padding-bottom: 80px;
+}
+.content06-title h5{
+	color: #3B3B3B;
+	font-size: 32px ;
+	font-weight: 600;
+	font-family: Noto Sans,sans-serif;
+	line-height: 38.4px;
+}
+.content06-text{
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	align-items: center;
+}
+.content06-imgText{
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	align-items: center;
+	padding-right: 24px;
+}
+.c01-bot{
+	position: relative; 
+
+}
+.c01-top{
+	position: absolute;
+	padding-top: 90px;
+}
+.c01-text{
+	position: absolute;
+	color: #FFFFFF;
+	font-size: 28px;
+	font-family: Noto Sans,sans-serif;
+	font-weight: 700;
+	line-height: 42px;
+	padding-top: 184px;
+}
+.content06-footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #3B3B3B;
+	font-size: 28px ;
+	font-weight: 600;
+	font-family: Noto Sans,sans-serif;
+	line-height: 33.6px;
+	padding-top: 80px;
+	padding-bottom: 40px;
+}
+.Introduction-BTN-06{
+	width: 276px;
+	height: 62px;
+	background: #000000;
+	border-radius: 5px;
+	margin-left: 810px;
+	margin-bottom: 120px;
+}
+.Introduction-BTN-P-06{
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	font-weight: 700;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+
+/*你好，冒險者，以下是content07區域，也就是精選文章區域*/
+
+
+.content07{
+ background: #fff;
+}
+.content07-title{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	padding-top: 120px;
+	padding-bottom: 80px;
+}
+.content07-title h6{
+	color: #3B3B3B;
+	font-size: 32px ;
+	font-weight: 600;
+	font-family: Noto Sans,sans-serif;
+	line-height: 38.4px;
+}
+.content07-imgText{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content07-box{
+	width: 416px;
+	padding-right: 24px;
+	padding-bottom: 44px;
+}
+.content07-box-time{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.con07-title{
+	color: #3B3B3B;
+	font-size: 20px ;
+	font-family: Noto Sans,sans-serif;
+	font-weight: 700;
+	line-height: 24px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 8px;
+}
+.con07-tag{
+	width: 105px;
+	background: #F1F1F1;
+	border-radius:16px;
+	text-align: center;
+	color: #3B3B3B;
+	font-size: 16px ;
+	font-family: Noto Sans,sans-serif;
+	font-weight: 400;
+	line-height: 24px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+}
+.con07-time{
+	color: #5B5B5B;
+	font-size: 16px ;
+	font-family: Noto Sans,sans-serif;
+	font-weight: 400;
+	line-height: 24px;
+	padding-top: 4px;
+	padding-right: 8px;
+}
+.content07-footer{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.content07-footer ul{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+.content07-footer li{
+	padding-right: 16px;
+	padding-bottom: 120px;
+}
+
+.half-o{
+	color: #E9E9E9;
+}
+
+
+/*你好，冒險者，以下是footer區域*/
+
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-image: url(../img/footer-bg-lg.png);
+}
+.footer-small-logo{
+	padding-bottom: 24px;
+	padding-top: 130.32px;
+}
+.footer-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.footer-normal{
+	color: #3B3B3B;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: Noto Sans,sans-serif;
+	line-height: 30px;
+}
+.footer-half{
+	color: #919191;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: Noto Sans,sans-serif;
+	line-height: 24px;
+	padding-top: 24px;
+	padding-bottom: 119px;
+}
+.footer-box{
+	position: relative;
+	color: #919191;
+}
+
+.footer-box img{
+	position: absolute;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 25px;
+	padding-right: 10px;
+}
+
+.footer-UL li{
+	width: 306px;
+	border: 1px solid #C1C1C1;
+	background: #FFFFFF;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	padding-top: 21px;
+	padding-bottom: 21px;
+	border-radius: 8px;
+	text-align:left;
+	color: #919191;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: Noto Sans,sans-serif;
+	line-height: 30px;
+
+}
+.footer-UL a{
+	text-decoration: none;
+	color: #919191;
+	padding-left: 88px;
+	
+}
+.footer-UL li:hover{
+	background: black;
+	color: #fff;
+}
+.footer-UL a:hover{
+	background: black;
+	color: #fff;
+}
+
+
+/*你好，冒險者，以下是375尺寸會看到的世界*/
+
+
+@media (max-width:375px)
+{
+	/*這邊開始寫你規劃的css*/
+	/*你好，冒險者，以下是header區域*/
+	.warp{
+		max-width: 375px;
+		margin: 0 auto;
+		border: 1px solid rebeccapurple;
+	}
+	.header{
+		border: 1px solid red;
+		background: #fff;
+		display: flex;
+		align-items: center;
+	}
+	.headerLogo{
+		padding-left: 12px;
+		padding-top: 11.5px;
+		padding-bottom: 11.5px;
+		padding-right: 15px;
+	}
+	.headerUL{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-left: 150px;
+	}
+	
+	.headerUL li{
+		padding-top: 3px;
+		padding-bottom: 24px;
+		padding-right: 4px;
+	}
+	.headerUL li a{
+		width: 20px;
+		color: #000;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.headerUL a{
+		text-decoration: none;
+		color: #000;
+	}
+
+	/*你好，冒險者，以下是content01區域*/
+
+	.content01{
+		display: flex;
+		flex-direction:column;
+		justify-content: left;
+		align-items: center;
+	}
+	.content01-img img{
+		padding-left: 0px;
+		background-image: url(../img/hero-sm.png);
+	}
+	.content01-Text{
+		padding-left: 0px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.content01-Text-lg{
+		color: #3B3B3B;
+		font-family: "noto sans", sans-serif;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 38.4px;
+		padding-bottom: 24px;
+		padding-top: 40px;
+	}
+	.content01-Text-mid{
+		width: 200px;
+		color: #5B5B5B;
+		font-family: "noto sans", sans-serif;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 30px;
+		padding-bottom: 8px;
+	}
+
+	.content01-Text-sm{
+		width: 270px;
+		text-align: center;
+		color: #C1C1C1;
+		font-family: "noto sans", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		padding-bottom: 24px;
+		padding-right: 0px;
+	}
+	.content01_bottom{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.content01-Limg{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.content01-Limg img{
+		padding-right: 24px;
+		padding-bottom: 45.71px;
+	}
+	
+	
+	/*你好，冒險者，以下是content02區域，也就是作品介紹區域*/
+
+	.content02{
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.content02 h2{
+		color: #000;
+		font-family: "noto sans", sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 28.8px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+
+
+
+	/*你好，冒險者，以下是content03區域，也就是星際旅行區域*/
+
+
+	.content03{
+		border: 1px solid green;
+		position: relative; 
+	}
+
+	.content03::before {
+		content:'';
+		position: absolute;
+		background-size:cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		/*background-image: url("https://i.postimg.cc/Zq93vSw3/homepage-work1-bg.png");*/
+		background-image: url("../img/homepage-work1-bg.png");
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.content03-imgText{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.5); /* 半透明的黑色遮罩 */
+		position: relative;
+	}
+	.content03-img{
+		padding-top: 93px;
+		padding-right: 39.92px;
+		padding-left: 40px;
+	}
+	.content03-Text{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+		border: 1px solid red;
+		background: #fff;
+		border-radius: 0px;
+		padding-left: 0px;
+		height: 100%;
+	}
+	.content03-Text h3{
+		text-align: center;
+		color: #000;
+		font-family: "noto sans", sans-serif;
+		font-size:24px ;
+		font-weight:700;
+		line-height:24px ;
+		padding-top: 24px;
+		padding-right: 30px;
+		padding-left: 0px;
+		padding-bottom: 8px;
+	}
+	.content03-Text-P{
+		text-align: center;
+		color: #5B5B5B;
+		font-family: "noto sans", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		padding-top: 0px;
+		padding-right: 60px;
+		padding-bottom: 16px;
+	}
+	.content03-Text ul{
+		padding-top: 0px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.content03-Text li{
+		width: 100px;
+		color: #3B3B3B;
+		background: #F1F1F1;
+		border-radius: 16px;
+	}
+	.content03-Text a{
+		color: #3B3B3B;
+		text-align: center;
+		font-family: "noto sans", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		text-decoration: none;
+		padding-right: 18px;
+		padding-bottom: 20px;
+	}
+	.White-Line-03{
+		width: 100px;
+		height: 1px;
+		padding-bottom: 0px;
+	}
+	.Introduction-BTN-03{
+		width: 128px;
+		height: 40px;
+		background: #000000;
+		border-radius: 5px;
+		margin-left: 5px;
+		margin-bottom: 48px;
+	}
+	.Introduction-BTN-P-03{
+		font-size: 16px;
+		color: #fff;
+		text-align: center;
+		line-height: 24px;
+		font-weight: 700;
+		padding-top: 0px;
+		padding-right: 3px;
+		margin-bottom: 60px;
+		margin-top: 10px;
+	}
+	
+	
+
+	/*你好，冒險者，以下是content04區域，也就是理財APP區域*/
+
+
+	.content04{
+		display: flex;
+		background-image: url("../img/homepage-work2-sm.png");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		height: 100%;
+	}
+	.content04-imgText{
+		width: 100%;
+		background: none;
+		background-color: rgba(10, 16, 19, 0%);
+		padding-top: 390px;
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-bottom: 0px;
+	}
+	.content04-Text{
+		background: #fff;
+		border-radius: 0px;
+		height: 100%;
+	}
+	.White-Line-04{
+		width: 20px;
+		height: 0px;
+		border-top: solid #fff 0px;
+		padding-bottom: 0px;
+		margin-left: 0px;
+	}
+	.Introduction-BTN-04{
+		width: 128px;
+		height: 40px;
+		background: #000000;
+		border-radius: 5px;
+		margin-left: 100px;
+		margin-bottom: 56px;
+	}
+	.Introduction-BTN-P-04{
+		font-size: 16px;
+		color: #fff;
+		text-align: center;
+		line-height: 24px;
+		font-weight: 700;
+		padding-top: 8px;
+		padding-bottom: 16px;
+		padding-right: 3px;
+	}
+	.content04-Text h4{
+		text-align: center;
+		color: #1E1E1E;
+		font-family: "noto sans", sans-serif;
+		font-size:20px ;
+		font-weight:700;
+		line-height:24px ;
+		padding-left: 0px;
+		padding-top: 20px;
+		padding-right: 0px;
+	}
+	.content04-Text-P{
+		width: 327px;
+		text-align: center;
+		color: #5B5B5B;
+		font-family: "noto sans", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		padding-top: 8px;
+		padding-left: 18px;
+	}
+	.content04-Text ul{
+		width: 100%;
+		padding-top: 16px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding-left: 65px;
+	}
+	.content04-Text li{
+		width: 140%;
+		color: #3B3B3B;
+		background: #F1F1F1;
+		border-radius: 16px;
+	}
+	.content04-Text a{
+		color: #3B3B3B;
+		text-align: center;
+		font-family: "noto sans", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		text-decoration: none;
+		padding-right: 30px;
+		padding-bottom: 20px;
+	}
+
+	
+	/*你好，冒險者，以下是content05區域，也就是醫療美容區域*/
+
+	.content05{
+		position: relative; 
+	}
+	.content05::before {
+		content:'';
+		position: absolute;
+		background-size:cover;
+		background-position:center;
+		background-repeat: no-repeat;
+		/*background-image: url("https://i.postimg.cc/Zq93vSw3/homepage-work1-bg.png");*/
+		background-image: url("../img/homepage-work3-bg.png");
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.content05-img{
+		padding-top: 100px;
+		padding-right: 30px;
+		padding-bottom: 60px;
+		padding-left: 30px;
+	}
+	.content05-Text{
+		display: flex;
+		flex-direction: column;
+		background: #fff;
+		background-color: rgba(255, 255, 255, 100%);
+		border-radius: 0px;
+		height: 100%;
+		width: 100%;
+		padding-left: 0px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+	}
+	.White-Line-05{
+		width: 0px;
+		height: 1px;
+		border-top: solid #fff 0px;
+		padding-bottom: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.Introduction-BTN-05{
+		width: 128px;
+		height: 40px;
+		background: #000000;
+		border-radius: 5px;
+		margin-left: 100px;
+		margin-bottom: 56px;
+	}
+	.Introduction-BTN-P-05{
+		font-size: 16px;
+		color: #fff;
+		text-align: center;
+		line-height: 24px;
+		font-weight: 700;
+		padding-top: 8px;
+		padding-bottom: 16px;
+		padding-right: 3px;
+	}
+	.content05-imgText{
+		background-color: rgba(0, 0, 0, 0.5); /* 半透明的黑色遮罩 */
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	
+	.content05-Text h4{
+		text-align: center;
+		color: #1E1E1E;
+		font-family: "noto sans", sans-serif;
+		font-size:20px ;
+		font-weight:700;
+		line-height:24px ;
+		padding-top: 24px;
+		padding-right: 0px;
+	}
+	.content05-Text-P{
+		text-align: center;
+		color: #5B5B5B;
+		font-family: "noto sans", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		padding-top: 8px;
+	}
+	.content05-Text ul{
+		padding-top: 16px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding-left: 10px;
+	}
+	.content05-Text li{
+		width: 140%;
+		color: #3B3B3B;
+		background: #F1F1F1;
+		border-radius: 16px;
+	}
+	.content05-Text a{
+		color: #3B3B3B;
+		text-align: center;
+		font-family: "noto sans", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		text-decoration: none;
+		padding-right: 35px;
+		padding-bottom: 24px;
+	}
+
+
+	/*你好，冒險者，以下是content06區域，也就是服務項目區域*/
+
+
+	.content06{
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url("../img/homepage-services-bg.png");
+		width:100%;
+		height: 100%;
+	}
+	.content06-title{
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		padding-top: 80px;
+		padding-bottom: 40px;
+	}
+	.content06-title h5{
+		color: #3B3B3B;
+		font-size: 24px ;
+		font-weight: 700;
+		font-family: Noto Sans,sans-serif;
+		line-height: 28.8px;
+	}
+	.content06-text{
+		display: flex;
+		flex-direction: column;
+		justify-content:center;
+		align-items: center;
+	}
+	.content06-imgText{
+		display: flex;
+		flex-direction: column;
+		justify-content:flex-start;
+		align-items: center;
+		padding-right: 34.5px;
+		padding-left: 34.5px;
+		padding-bottom: 24px;
+	}
+	.c01-bot{
+		position: relative; 
+		border-radius: 16px;
+	}
+	.c01-top{
+		position: absolute;
+		padding-top: 86.5px;
+	}
+	.c01-text{
+		position: absolute;
+		color: #FFFFFF;
+		font-size: 28px;
+		font-family: Noto Sans,sans-serif;
+		font-weight: 700;
+		line-height: 42px;
+		padding-top: 180px;
+	}
+	.content06-footer{
+		color: #3B3B3B;
+		font-size: 20px ;
+		font-weight: 700;
+		font-family: Noto Sans,sans-serif;
+		line-height: 24px;
+		padding-top: 40px;
+		padding-bottom: 24px;
+	}
+	.Introduction-BTN-06{
+		width: 208px;
+		height: 40px;
+		background: #000000;
+		border-radius: 5px;
+		margin-left: 70px;
+		margin-bottom: 88px;
+	}
+	.Introduction-BTN-P-06{
+		font-size: 16px;
+		color: #fff;
+		text-align: center;
+		line-height: 24px;
+		font-weight: 700;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+
+
+
+	/*你好，冒險者，以下是content07區域，也就是精選文章區域*/
+
+
+	.content07{
+		background: #fff;
+	}
+	.content07-title{
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		padding-top: 80px;
+		padding-bottom: 40px;
+	}
+	.content07-title h6{
+		color: #3B3B3B;
+		font-size: 24px ;
+		font-weight: 700;
+		font-family: Noto Sans,sans-serif;
+		line-height: 28.8px;
+	}
+	.content07-imgText{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.content07-box{
+		width: 100%;
+		padding-right: 12px;
+		padding-left: 12px;
+		padding-bottom: 48px;
+	}
+	.content07-box img{
+		border-radius: 8px;
+	}
+
+	.content07-box-time{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.con07-title{
+		width: 335px;
+		color: #3B3B3B;
+		font-size: 20px ;
+		font-family: Noto Sans,sans-serif;
+		font-weight: 600;
+		line-height: 24px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		padding-left: 4px;
+	}
+	.con07-tag{
+		width: 105px;
+		background: #F1F1F1;
+		border-radius:16px;
+		text-align: center;
+		color: #3B3B3B;
+		font-size: 16px ;
+		font-family: Noto Sans,sans-serif;
+		font-weight: 400;
+		line-height: 24px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		padding-left: 4px;
+		margin-left: 12px;
+	}
+	.con07-time{
+		color: #5B5B5B;
+		font-size: 16px ;
+		font-family: Noto Sans,sans-serif;
+		font-weight: 400;
+		line-height: 24px;
+		padding-top: 4px;
+		padding-right: 8px;
+		margin-right: 8px;
+	}
+	.content07-footer{
+		display: flex;
+		justify-content:center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.content07-footer ul{
+		display: flex;
+		justify-content:center;
+		align-items: center;
+	}
+	.content07-footer li{
+		padding-right: 16px;
+		padding-bottom: 80px;
+	}
+
+
+		
+	/*你好，冒險者，以下是footer區域*/
+
+	.footer{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-image: url(../img/footer-bg-sm.png);
+	}
+	.footer-small-logo{
+		width: 120px;
+		height: 54px;
+		margin-bottom: 24px;
+		margin-left: 100px;
+		margin-right: 100px;
+		margin-top: 40px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.footer-text{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer-normal{
+		color: #3B3B3B;
+		font-size: 16px;
+		font-weight: 400;
+		font-family: Noto Sans,sans-serif;
+		line-height: 24px;
+	}
+	.footer-half{
+		color: #919191;
+		font-size: 16px;
+		font-weight: 400;
+		font-family: Noto Sans,sans-serif;
+		line-height: 24px;
+		padding-top: 24px;
+		padding-bottom: 40px;
+	}
+	.footer-box{
+		position: relative;
+		color: #919191;
+	}
+
+	.footer-box img{
+		position: absolute;
+		padding-top: 9px;
+		padding-bottom: 9px;
+		padding-left: 25px;
+		padding-right: 10px;
+	}
+
+	.footer-UL li{
+		width: 306px;
+		border: 1px solid #C1C1C1;
+		background: #FFFFFF;
+		margin-bottom: 24px;
+		padding-top: 21px;
+		padding-bottom: 21px;
+		border-radius: 8px;
+		text-align:left;
+		color: #919191;
+		font-size: 20px;
+		font-weight: 700;
+		font-family: Noto Sans,sans-serif;
+		line-height: 30px;
+
+	}
+	.footer-UL a{
+		text-decoration: none;
+		color: #919191;
+		padding-left: 88px;
+		
+	}
+	.footer-UL li:hover{
+		background: black;
+		color: #fff;
+	}
+	.footer-UL a:hover{
+		background: black;
+		color: #fff;
+	}
+
+
+}
