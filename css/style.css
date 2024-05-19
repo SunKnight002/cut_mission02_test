@@ -749,14 +749,13 @@ img{
 /*你好，冒險者，以下是375尺寸會看到的世界*/
 
 
-@media (max-width:375px)
+@media (max-width:992px)
 {
 	/*這邊開始寫你規劃的css*/
 	/*你好，冒險者，以下是header區域*/
 	.warp{
 		max-width: 375px;
 		margin: 0 auto;
-		border: 1px solid rebeccapurple;
 	}
 	.header{
 		border: 1px solid red;
