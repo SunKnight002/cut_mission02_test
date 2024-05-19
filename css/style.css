@@ -59,7 +59,9 @@ img{
     max-width: 1920px;
     margin: 0 auto;
 }
-
+.mobile{
+	display: none;
+}
 
 /*你好，冒險者，以下是header區域*/
 
@@ -139,6 +141,9 @@ img{
 	line-height: 30px;
 	padding-bottom: 8px;
 }
+.mark01{
+	padding-left: 140px;
+}
 
 .content01-Text-sm{
 	color: #C1C1C1;
@@ -154,6 +159,8 @@ img{
 	justify-content: center;
 	align-items: center;
 }
+
+
 
 /*你好，冒險者，以下是content02區域，也就是作品介紹區域*/
 
@@ -757,8 +764,10 @@ img{
 		max-width: 375px;
 		margin: 0 auto;
 	}
+	.mobile{
+        display:block;
+    }
 	.header{
-		border: 1px solid red;
 		background: #fff;
 		display: flex;
 		align-items: center;
@@ -824,7 +833,7 @@ img{
 		padding-top: 40px;
 	}
 	.content01-Text-mid{
-		width: 200px;
+		width: 300px;
 		color: #5B5B5B;
 		font-family: "noto sans", sans-serif;
 		font-size: 20px;
@@ -832,7 +841,12 @@ img{
 		line-height: 30px;
 		padding-bottom: 8px;
 	}
-
+	.mark01{
+		padding-left: 75px;
+	}
+	.mark02{
+		padding-left: 80px;
+	}
 	.content01-Text-sm{
 		width: 270px;
 		text-align: center;
