@@ -30,6 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: "Noto Sans TC", sans-serif;
+	line-height:1.5;
 }
 ol, ul {
 	list-style: none;
@@ -55,7 +57,7 @@ img{
 	box-sizing:border-box;
 }
 
-.warp{
+.container{
     max-width: 1920px;
     margin: 0 auto;
 }
@@ -88,6 +90,7 @@ img{
 	padding-top: 32px;
 	padding-bottom: 32px;
 	padding-right: 40px;
+
 }
 .headerUL li a{
 	width: 48px;
@@ -95,86 +98,100 @@ img{
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 24px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	
 }
 .headerUL a{
 	text-decoration: none;
 	color: #000;
+
+}
+.headerUL a:hover{
+	border: 1px solid #F1F1F1;
+	border-width:medium;
+	border-style:ridge;
 }
 
-/*你好，冒險者，以下是content01區域*/
 
-.content01{
+/*你好，冒險者，以下是profile-intro區域*/
+
+.profile-intro{
 	display: flex;
-	flex-direction:row-reverse;
-	justify-content: space-between;
 }
 
-.content01-Limg{
+.profile-intro-logo{
 	display: flex;
-	justify-content: flex-start;
-	align-items: center;
 }
-.content01-Limg img{
+.profile-intro-logo img{
 	padding-right: 24px;
-	padding-bottom: 256px;
+	margin-bottom: 248px;
 }
-.content01-img img{
+.profile-intro-img{
 	padding-left: 24px;
+	display: block;
 }
-.content01-Text{
-	padding-left: 250px;
+
+.profile-intro-Text{
+	position: relative;
+	margin-top: 248px;
+	margin-left: 312px;
 }
-.content01-Text-lg{
+.profile-intro-lg{
+	width: 430px;
 	color: #3B3B3B;
-	font-family: "noto sans", sans-serif;
 	font-size: 40px;
 	font-weight: 600;
 	line-height: 48px;
 	padding-bottom: 24px;
-	padding-top: 248px;
+	
 }
-.content01-Text-mid{
+.profile-intro-mid{
 	color: #5B5B5B;
-	font-family: "noto sans", sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 30px;
 	padding-bottom: 8px;
 }
 .mark01{
-	padding-left: 140px;
+	position: absolute;
+	width: 148px;
+	top: 100px;
+	left: 150px;
+}
+.mark02{
+	position: absolute;
+	width: 119px;
+	top: 100px;
+	left: 310px;
 }
 
-.content01-Text-sm{
+.profile-intro-sm{
 	color: #C1C1C1;
-	font-family: "noto sans", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 	padding-bottom: 60px;
-	padding-right: 24px;
-}
-.content01_bottom{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding-top: 8px;
 }
 
 
 
-/*你好，冒險者，以下是content02區域，也就是作品介紹區域*/
+/*你好，冒險者，以下是works-intro區域，也就是作品介紹區域*/
 
-.content02{
+.works-intro{
 	display: flex;
 	justify-content:center;
 	align-items:center;
-	padding-top: 120px;
+	padding-top: 121px;
 	padding-bottom: 80px;
+	border: 1px solid black;
 }
 
-.content02 h2{
+.works-intro h2{
 	color: #000;
-	font-family: "noto sans", sans-serif;
 	font-size: 32px;
 	font-weight: 600;
 	line-height: 38.4px;
@@ -183,15 +200,14 @@ img{
 }
 
 
-/*你好，冒險者，以下是content03區域，也就是星際旅行區域*/
+/*你好，冒險者，以下是work-star-travel區域，也就是星際旅行區域*/
 
 
-.content03{
-	border: 1px solid green;
+.work-star-travel{
 	position: relative; 
 }
 
-.content03::before {
+.work-star-travel::before {
 	content:'';
 	position: absolute;
 	background-size:cover;
@@ -204,18 +220,18 @@ img{
 	width: 100%;
 	height: 100%;
   }
-.content03-imgText{
+.work-star-travel-inside{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: rgba(0, 0, 0, 0.5); /* 半透明的黑色遮罩 */
 	position: relative;
 }
-.content03-img{
+.work-star-travel-bg{
 	padding-top: 80px;
-	padding-right: 50px;
+	padding-right: 55px;
 }
-.content03-Text{
+.work-star-travel-Text{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -226,61 +242,63 @@ img{
 	padding-left: 40px;
 	height: 400px;
 }
-.White-Line-03{
-	width: 440px;
-	height: 1px;
-	border-top: solid #fff 2px;
-	padding-bottom: 40px;
-}
-.Introduction-BTN-03{
-	width: 176px;
-	height: 62px;
-	background: #000000;
-	border-radius: 5px;
-	margin-left: 130px;
-}
-.Introduction-BTN-P-03{
-	font-size: 20px;
+.work-star-travel-Text h3{
 	color: #fff;
-	text-align: center;
-	line-height: 30px;
-	font-weight: 700;
-	margin-top: 16px;
-}
-.content03-Text h3{
-	color: #fff;
-	font-family: "noto sans", sans-serif;
 	font-size:28px ;
 	font-weight:700;
 	line-height:33.6px ;
 	padding-top: 80px;
 	padding-right: 262px;
 }
-.content03-Text-P{
+.work-star-travel-P{
 	color: #fff;
-	font-family: "noto sans", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 	padding-top: 8px;
 }
-.content03-Text ul{
+.White-Line{
+	width: 440px;
+	height: 1px;
+	border-top: solid #fff 1px;
+	margin-bottom: 40px;
+}
+
+input{
+	border:0;
+	background: #000000;
+	color:#fff;
+	border-radius:5px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+	font-weight: 700;
+}
+input:hover{
+	background: orange;
+	color: #000;
+}
+
+
+.Introduction-BTN{
+	margin-left: 140px;
+}
+
+.work-star-travel-Text ul{
 	padding-top: 24px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 }
-.content03-Text li{
-	width: 100px;
+.work-star-travel-Text li{
+	width: 95px;
 	color: #3B3B3B;
 	background: #fff;
 	border-radius: 16px;
-	border: 1px solid powderblue;
 }
-.content03-Text a{
+.work-star-travel-Text a{
 	color: #3B3B3B;
 	text-align: center;
-	font-family: "noto sans", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
@@ -290,10 +308,10 @@ img{
 }
 
 
-/*你好，冒險者，以下是content04區域，也就是理財APP區域*/
+/*你好，冒險者，以下是work-finance-APP區域，也就是理財APP區域*/
 
 
-.content04{
+.work-finance-APP{
 	display: flex;
 	background-image: url("../img/homepage-work2-lg.png");
 	background-repeat: no-repeat;
@@ -301,11 +319,62 @@ img{
 	height: 800px;
 }
 
-.content04-Text{
+.work-finance-APP-Text{
+	width: 526px;
 	background: #FFFFFF1A;
 	background-color: rgba(255, 255, 255, 10%);
 	border-radius: 24px;
 	height: 400px;
+}
+
+.work-finance-APP-inside{
+	width: 948px;
+	background: #0A101380;
+	background-color: rgba(10, 16, 19, 50%);
+	padding-top: 200px;
+	padding-left: 312px;
+	padding-right: 110px;
+	padding-bottom: 200px;
+}
+.work-finance-APP h4{
+	color: #fff;
+	font-size:28px ;
+	font-weight:700;
+	line-height:33.6px ;
+	padding-left: 40px;
+	padding-top: 80px;
+	padding-right: 262px;
+}
+.work-finance-APP-P{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	padding-top: 8px;
+	padding-left: 40px;
+}
+.work-finance-APP ul{
+	padding-top: 24px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 40px;
+}
+.work-finance-APP li{
+	width: 75px;
+	color: #3B3B3B;
+	background: #fff;
+	border-radius: 16px;
+}
+.work-finance-APP a{
+	color: #3B3B3B;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-decoration: none;
+	padding-right: 18px;
+	padding-bottom: 40px;
 }
 
 .White-Line-04{
@@ -315,84 +384,23 @@ img{
 	padding-bottom: 40px;
 	margin-left: 40px;
 }
+
 .Introduction-BTN-04{
 	width: 176px;
 	height: 62px;
 	background: #000000;
 	border-radius: 5px;
-	margin-left: 160px;
+	margin-left: 180px;
 	margin-bottom: 56px;
 }
-.Introduction-BTN-P-04{
-	font-size: 20px;
-	color: #fff;
-	text-align: center;
-	line-height: 30px;
-	font-weight: 700;
-	margin-top: 0px;
-	padding-top: 16px;
-}
 
-.content04-imgText{
-	width: 948px;
-	background: #0A101380;
-	background-color: rgba(10, 16, 19, 50%);
-	padding-top: 200px;
-	padding-left: 312px;
-	padding-right: 110px;
-	padding-bottom: 200px;
-}
-.content04-Text h4{
-	color: #fff;
-	font-family: "noto sans", sans-serif;
-	font-size:28px ;
-	font-weight:700;
-	line-height:33.6px ;
-	padding-left: 40px;
-	padding-top: 80px;
-	padding-right: 262px;
-}
-.content04-Text-P{
-	color: #fff;
-	font-family: "noto sans", sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-	padding-top: 8px;
-	padding-left: 40px;
-}
-.content04-Text ul{
-	padding-top: 24px;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	padding-left: 40px;
-}
-.content04-Text li{
-	width: 100px;
-	color: #3B3B3B;
-	background: #fff;
-	border-radius: 16px;
-}
-.content04-Text a{
-	color: #3B3B3B;
-	text-align: center;
-	font-family: "noto sans", sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-	text-decoration: none;
-	padding-right: 18px;
-	padding-bottom: 40px;
-}
+/*你好，冒險者，以下是work-medical-beauty區域，也就是醫療美容區域*/
 
-/*你好，冒險者，以下是content05區域，也就是醫療美容區域*/
-
-.content05{
+.work-medical-beauty{
 	position: relative; 
 }
 
-.content05::before {
+.work-medical-beauty::before {
 	content:'';
 	position: absolute;
 	background-size:cover;
@@ -406,44 +414,21 @@ img{
 	height: 100%;
   }
 
-.White-Line-05{
-	width: 440px;
-	height: 1px;
-	border-top: solid #fff 2px;
-	padding-bottom: 40px;
-	margin-left: 5px;
-	margin-right: 55px;
-}
-.Introduction-BTN-05{
-	width: 176px;
-	height: 62px;
-	background: #000000;
-	border-radius: 5px;
-	margin-left: 135px;
-	margin-bottom: 56px;
-}
-.Introduction-BTN-P-05{
-	font-size: 20px;
-	color: #fff;
-	text-align: center;
-	line-height: 30px;
-	font-weight: 700;
-	padding-top: 16px;
-	padding-bottom: 16px;
-}
-.content05-imgText{
+
+.work-medical-beauty-inside{
 	background-color: rgba(0, 0, 0, 0.5); /* 半透明的黑色遮罩 */
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.content05-img{
+.work-medical-beauty-bg{
 	padding-top: 176px;
 	padding-right: 49px;
 	padding-bottom: 112px;
 }
-.content05-Text{
+.work-medical-beauty-Text{
+	width: 526px;
 	display: flex;
 	flex-direction: column;
 	background: #fff;
@@ -454,9 +439,8 @@ img{
 	padding-bottom: 200px;
 	padding-left: 40px;
 }
-.content05-Text h4{
+.work-medical-beauty-Text h4{
 	color: #fff;
-	font-family: "noto sans", sans-serif;
 	font-size:28px ;
 	font-weight:700;
 	line-height:33.6px ;
@@ -465,29 +449,26 @@ img{
 }
 .content05-Text-P{
 	color: #fff;
-	font-family: "noto sans", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 	padding-top: 8px;
 }
-.content05-Text ul{
+.work-medical-beauty-Text ul{
 	padding-top: 24px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 }
-.content05-Text li{
+.work-medical-beauty-Text li{
 	width: 100px;
 	color: #3B3B3B;
 	background: #fff;
 	border-radius: 16px;
-	border: 1px solid powderblue;
 }
-.content05-Text a{
+.work-medical-beauty-Text a{
 	color: #3B3B3B;
 	text-align: center;
-	font-family: "noto sans", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
@@ -496,90 +477,82 @@ img{
 	padding-bottom: 40px;
 }
 
-/*你好，冒險者，以下是content06區域，也就是服務項目區域*/
+/*你好，冒險者，以下是work-service-item區域，也就是服務項目區域*/
 
 
-.content06{
+.work-service-item{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-image: url("../img/homepage-services-bg.png");
 	width:100%;
-	height: 800px;
+	height: 881px;
 }
-.content06-title{
+.work-service-item-title{
 	display: flex;
 	justify-content:center;
 	align-items:center;
 	padding-top: 120px;
 	padding-bottom: 80px;
 }
-.content06-title h5{
+.work-service-item-title h5{
 	color: #3B3B3B;
 	font-size: 32px ;
 	font-weight: 600;
-	font-family: Noto Sans,sans-serif;
 	line-height: 38.4px;
 	padding-left:16px;
 	padding-right:16px;
 }
-.content06-text{
+.work-service-item-text{
 	display: flex;
 	flex-direction: row;
 	justify-content:center;
 	align-items: center;
 }
-.content06-imgText{
+.work-service-item-inside{
 	display: flex;
 	flex-direction: column;
 	justify-content:flex-start;
 	align-items: center;
 	padding-right: 24px;
 }
-.c01-bot{
+.work-service-item-bg{
 	position: relative; 
 
 }
-.c01-top{
+.work-service-item-top{
 	position: absolute;
 	padding-top: 90px;
 }
-.c01-text{
+.work-service-item-slogon{
 	position: absolute;
 	color: #FFFFFF;
 	font-size: 28px;
-	font-family: Noto Sans,sans-serif;
 	font-weight: 700;
 	line-height: 42px;
 	padding-top: 184px;
 }
-.content06-footer{
+.work-service-item-contact{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: #3B3B3B;
 	font-size: 28px ;
 	font-weight: 600;
-	font-family: Noto Sans,sans-serif;
 	line-height: 33.6px;
 	padding-top: 80px;
 	padding-bottom: 40px;
 }
-.Introduction-BTN-06{
+.Introduction-BTN-detail{
 	width: 276px;
 	height: 62px;
 	background: #000000;
 	border-radius: 5px;
-	margin-left: 810px;
-	margin-bottom: 120px;
-}
-.Introduction-BTN-P-06{
+	margin-left: 815px;
 	font-size: 20px;
 	color: #fff;
 	text-align: center;
 	line-height: 30px;
 	font-weight: 700;
-	padding-top: 16px;
-	padding-bottom: 16px;
 }
 
 
@@ -600,7 +573,6 @@ img{
 	color: #3B3B3B;
 	font-size: 32px ;
 	font-weight: 600;
-	font-family: Noto Sans,sans-serif;
 	line-height: 38.4px;
 }
 .content07-imgText{
@@ -621,7 +593,6 @@ img{
 .con07-title{
 	color: #3B3B3B;
 	font-size: 20px ;
-	font-family: Noto Sans,sans-serif;
 	font-weight: 700;
 	line-height: 24px;
 	padding-top: 16px;
@@ -635,7 +606,6 @@ img{
 	text-align: center;
 	color: #3B3B3B;
 	font-size: 16px ;
-	font-family: Noto Sans,sans-serif;
 	font-weight: 400;
 	line-height: 24px;
 	padding-top: 4px;
@@ -645,7 +615,6 @@ img{
 .con07-time{
 	color: #5B5B5B;
 	font-size: 16px ;
-	font-family: Noto Sans,sans-serif;
 	font-weight: 400;
 	line-height: 24px;
 	padding-top: 4px;
@@ -691,21 +660,23 @@ img{
 	justify-content: flex-start;
 	align-items: flex-start;
 }
+.footer-text a{
+	text-decoration: none;
+}
 .footer-normal{
 	color: #3B3B3B;
 	font-size: 20px;
 	font-weight: 400;
-	font-family: Noto Sans,sans-serif;
 	line-height: 30px;
 }
-.footer-half{
+.footer-email{
 	color: #919191;
 	font-size: 20px;
 	font-weight: 400;
-	font-family: Noto Sans,sans-serif;
 	line-height: 24px;
 	padding-top: 24px;
 	padding-bottom: 119px;
+	text-decoration: none;
 }
 .footer-box{
 	position: relative;
@@ -714,7 +685,7 @@ img{
 
 .footer-box img{
 	position: absolute;
-	padding-top: 9px;
+	top: 8px;
 	padding-bottom: 9px;
 	padding-left: 25px;
 	padding-right: 10px;
@@ -733,7 +704,6 @@ img{
 	color: #919191;
 	font-size: 20px;
 	font-weight: 400;
-	font-family: Noto Sans,sans-serif;
 	line-height: 30px;
 
 }
@@ -760,7 +730,7 @@ img{
 {
 	/*這邊開始寫你規劃的css*/
 	/*你好，冒險者，以下是header區域*/
-	.warp{
+	.container{
 		max-width: 375px;
 		margin: 0 auto;
 	}
@@ -803,19 +773,19 @@ img{
 		color: #000;
 	}
 
-	/*你好，冒險者，以下是content01區域*/
+	/*你好，冒險者，以下是profile-intro區域*/
 
-	.content01{
+	.profile-intro{
 		display: flex;
 		flex-direction:column;
 		justify-content: left;
 		align-items: center;
 	}
-	.content01-img img{
+	.profile-intro img{
 		padding-left: 0px;
 		background-image: url(../img/hero-sm.png);
 	}
-	.content01-Text{
+	.profile-intro-Text{
 		padding-left: 0px;
 		text-align: center;
 		display: flex;
@@ -823,19 +793,17 @@ img{
 		align-items: center;
 		justify-content: center;
 	}
-	.content01-Text-lg{
+	.profile-intro-lg{
 		color: #3B3B3B;
-		font-family: "noto sans", sans-serif;
 		font-size: 32px;
 		font-weight: 700;
 		line-height: 38.4px;
 		padding-bottom: 24px;
 		padding-top: 40px;
 	}
-	.content01-Text-mid{
+	.profile-intro-mid{
 		width: 300px;
 		color: #5B5B5B;
-		font-family: "noto sans", sans-serif;
 		font-size: 20px;
 		font-weight: 400;
 		line-height: 30px;
@@ -847,45 +815,39 @@ img{
 	.mark02{
 		padding-left: 80px;
 	}
-	.content01-Text-sm{
+	.profile-intro-{
 		width: 270px;
 		text-align: center;
 		color: #C1C1C1;
-		font-family: "noto sans", sans-serif;
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 24px;
 		padding-bottom: 24px;
 		padding-right: 0px;
 	}
-	.content01_bottom{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.content01-Limg{
+	
+	.profile-intro-logo{
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
 	}
-	.content01-Limg img{
+	.profile-intro-logo img{
 		padding-right: 24px;
 		padding-bottom: 45.71px;
 	}
 	
 	
-	/*你好，冒險者，以下是content02區域，也就是作品介紹區域*/
+	/*你好，冒險者，以下是works-intro區域，也就是作品介紹區域*/
 
-	.content02{
+	.works-intro{
 		display: flex;
 		justify-content:center;
 		align-items:center;
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
-	.content02 h2{
+	.works-intro h2{
 		color: #000;
-		font-family: "noto sans", sans-serif;
 		font-size: 24px;
 		font-weight: 700;
 		line-height: 28.8px;
@@ -896,15 +858,14 @@ img{
 
 
 
-	/*你好，冒險者，以下是content03區域，也就是星際旅行區域*/
+	/*你好，冒險者，以下是work-star-travel區域，也就是星際旅行區域*/
 
 
-	.content03{
-		border: 1px solid green;
+	.work-star-travel{
 		position: relative; 
 	}
 
-	.content03::before {
+	.work-star-travel::before {
 		content:'';
 		position: absolute;
 		background-size:cover;
@@ -917,7 +878,7 @@ img{
 		width: 100%;
 		height: 100%;
 	}
-	.content03-imgText{
+	.work-star-travel-inside{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -925,26 +886,25 @@ img{
 		background-color: rgba(0, 0, 0, 0.5); /* 半透明的黑色遮罩 */
 		position: relative;
 	}
-	.content03-img{
+	.work-star-travel-bg{
 		padding-top: 93px;
 		padding-right: 39.92px;
 		padding-left: 40px;
 	}
-	.content03-Text{
+	.work-star-travel-Text{
+		width: 526px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items:center;
-		border: 1px solid red;
 		background: #fff;
 		border-radius: 0px;
 		padding-left: 0px;
 		height: 100%;
 	}
-	.content03-Text h3{
+	.work-star-travel-Text h3{
 		text-align: center;
 		color: #000;
-		font-family: "noto sans", sans-serif;
 		font-size:24px ;
 		font-weight:700;
 		line-height:24px ;
@@ -953,10 +913,9 @@ img{
 		padding-left: 0px;
 		padding-bottom: 8px;
 	}
-	.content03-Text-P{
+	.work-star-travel-P{
 		text-align: center;
 		color: #5B5B5B;
-		font-family: "noto sans", sans-serif;
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 24px;
@@ -964,22 +923,21 @@ img{
 		padding-right: 60px;
 		padding-bottom: 16px;
 	}
-	.content03-Text ul{
+	.work-star-travel-Text ul{
 		padding-top: 0px;
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
 	}
-	.content03-Text li{
+	.work-star-travel-Text li{
 		width: 100px;
 		color: #3B3B3B;
 		background: #F1F1F1;
 		border-radius: 16px;
 	}
-	.content03-Text a{
+	.work-star-travel-Text a{
 		color: #3B3B3B;
 		text-align: center;
-		font-family: "noto sans", sans-serif;
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 24px;
@@ -1014,17 +972,17 @@ img{
 	
 	
 
-	/*你好，冒險者，以下是content04區域，也就是理財APP區域*/
+	/*你好，冒險者，以下是work-finance-APP區域，也就是理財APP區域*/
 
 
-	.content04{
+	.work-finance-APP{
 		display: flex;
 		background-image: url("../img/homepage-work2-sm.png");
 		background-repeat: no-repeat;
 		background-attachment: scroll;
 		height: 100%;
 	}
-	.content04-imgText{
+	.work-finance-APP-inside{
 		width: 100%;
 		background: none;
 		background-color: rgba(10, 16, 19, 0%);
@@ -1033,7 +991,7 @@ img{
 		padding-right: 0px;
 		padding-bottom: 0px;
 	}
-	.content04-Text{
+	.work-finance-APP{
 		background: #fff;
 		border-radius: 0px;
 		height: 100%;
@@ -1053,20 +1011,10 @@ img{
 		margin-left: 100px;
 		margin-bottom: 56px;
 	}
-	.Introduction-BTN-P-04{
-		font-size: 16px;
-		color: #fff;
-		text-align: center;
-		line-height: 24px;
-		font-weight: 700;
-		padding-top: 8px;
-		padding-bottom: 16px;
-		padding-right: 3px;
-	}
-	.content04-Text h4{
+
+	.work-finance-APPt h4{
 		text-align: center;
 		color: #1E1E1E;
-		font-family: "noto sans", sans-serif;
 		font-size:20px ;
 		font-weight:700;
 		line-height:24px ;
@@ -1074,18 +1022,17 @@ img{
 		padding-top: 20px;
 		padding-right: 0px;
 	}
-	.content04-Text-P{
+	.work-finance-APP-P{
 		width: 327px;
 		text-align: center;
 		color: #5B5B5B;
-		font-family: "noto sans", sans-serif;
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 24px;
 		padding-top: 8px;
 		padding-left: 18px;
 	}
-	.content04-Text ul{
+	.work-finance-APP ul{
 		width: 100%;
 		padding-top: 16px;
 		display: flex;
@@ -1093,16 +1040,15 @@ img{
 		align-items: center;
 		padding-left: 65px;
 	}
-	.content04-Text li{
+	.work-finance-APP li{
 		width: 140%;
 		color: #3B3B3B;
 		background: #F1F1F1;
 		border-radius: 16px;
 	}
-	.content04-Text a{
+	.work-finance-APP-Textt a{
 		color: #3B3B3B;
 		text-align: center;
-		font-family: "noto sans", sans-serif;
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 24px;
@@ -1130,7 +1076,7 @@ img{
 		width: 100%;
 		height: 100%;
 	}
-	.content05-img{
+	.work-medical-beauty-bg{
 		padding-top: 100px;
 		padding-right: 30px;
 		padding-bottom: 60px;
@@ -1174,7 +1120,7 @@ img{
 		padding-bottom: 16px;
 		padding-right: 3px;
 	}
-	.content05-imgText{
+	.work-medical-beauty-inside{
 		background-color: rgba(0, 0, 0, 0.5); /* 半透明的黑色遮罩 */
 		position: relative;
 		display: flex;
@@ -1184,10 +1130,9 @@ img{
 	}
 	
 	
-	.content05-Text h4{
+	.work-medical-beauty- h4{
 		text-align: center;
 		color: #1E1E1E;
-		font-family: "noto sans", sans-serif;
 		font-size:20px ;
 		font-weight:700;
 		line-height:24px ;
@@ -1197,29 +1142,27 @@ img{
 	.content05-Text-P{
 		text-align: center;
 		color: #5B5B5B;
-		font-family: "noto sans", sans-serif;
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 24px;
 		padding-top: 8px;
 	}
-	.content05-Text ul{
+	.work-medical-beauty- ul{
 		padding-top: 16px;
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
 		padding-left: 10px;
 	}
-	.content05-Text li{
+	.work-medical-beauty- li{
 		width: 140%;
 		color: #3B3B3B;
 		background: #F1F1F1;
 		border-radius: 16px;
 	}
-	.content05-Text a{
+	.work-medical-beauty- a{
 		color: #3B3B3B;
 		text-align: center;
-		font-family: "noto sans", sans-serif;
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 24px;
@@ -1229,37 +1172,36 @@ img{
 	}
 
 
-	/*你好，冒險者，以下是content06區域，也就是服務項目區域*/
+	/*你好，冒險者，以下是work-service-item區域，也就是服務項目區域*/
 
 
-	.content06{
+	.work-service-item{
 		background-position: center;
 		background-repeat: no-repeat;
 		background-image: url("../img/homepage-services-bg.png");
 		width:100%;
 		height: 100%;
 	}
-	.content06-title{
+	.work-service-item-title{
 		display: flex;
 		justify-content:center;
 		align-items:center;
 		padding-top: 80px;
 		padding-bottom: 40px;
 	}
-	.content06-title h5{
+	.work-service-item-title h5{
 		color: #3B3B3B;
 		font-size: 24px ;
 		font-weight: 700;
-		font-family: Noto Sans,sans-serif;
 		line-height: 28.8px;
 	}
-	.content06-text{
+	.work-service-item-text{
 		display: flex;
 		flex-direction: column;
 		justify-content:center;
 		align-items: center;
 	}
-	.content06-imgText{
+	.work-service-item-inside{
 		display: flex;
 		flex-direction: column;
 		justify-content:flex-start;
@@ -1268,48 +1210,37 @@ img{
 		padding-left: 34.5px;
 		padding-bottom: 24px;
 	}
-	.c01-bot{
+	.work-service-item-bg{
 		position: relative; 
 		border-radius: 16px;
 	}
-	.c01-top{
+	.work-service-item-top{
 		position: absolute;
 		padding-top: 86.5px;
 	}
-	.c01-text{
+	.work-service-item-slogon{
 		position: absolute;
 		color: #FFFFFF;
 		font-size: 28px;
-		font-family: Noto Sans,sans-serif;
 		font-weight: 700;
 		line-height: 42px;
 		padding-top: 180px;
 	}
-	.content06-footer{
+	.work-service-item-contact{
 		color: #3B3B3B;
 		font-size: 20px ;
 		font-weight: 700;
-		font-family: Noto Sans,sans-serif;
 		line-height: 24px;
 		padding-top: 40px;
 		padding-bottom: 24px;
 	}
-	.Introduction-BTN-06{
+	.Introduction-BTN-detail{
 		width: 208px;
 		height: 40px;
 		background: #000000;
 		border-radius: 5px;
 		margin-left: 70px;
 		margin-bottom: 88px;
-	}
-	.Introduction-BTN-P-06{
-		font-size: 16px;
-		color: #fff;
-		text-align: center;
-		line-height: 24px;
-		font-weight: 700;
-		padding-top: 8px;
-		padding-bottom: 8px;
 	}
 
 
@@ -1331,7 +1262,6 @@ img{
 		color: #3B3B3B;
 		font-size: 24px ;
 		font-weight: 700;
-		font-family: Noto Sans,sans-serif;
 		line-height: 28.8px;
 	}
 	.content07-imgText{
@@ -1359,7 +1289,6 @@ img{
 		width: 335px;
 		color: #3B3B3B;
 		font-size: 20px ;
-		font-family: Noto Sans,sans-serif;
 		font-weight: 600;
 		line-height: 24px;
 		padding-top: 16px;
@@ -1373,7 +1302,6 @@ img{
 		text-align: center;
 		color: #3B3B3B;
 		font-size: 16px ;
-		font-family: Noto Sans,sans-serif;
 		font-weight: 400;
 		line-height: 24px;
 		padding-top: 4px;
@@ -1384,7 +1312,6 @@ img{
 	.con07-time{
 		color: #5B5B5B;
 		font-size: 16px ;
-		font-family: Noto Sans,sans-serif;
 		font-weight: 400;
 		line-height: 24px;
 		padding-top: 4px;
@@ -1440,14 +1367,12 @@ img{
 		color: #3B3B3B;
 		font-size: 16px;
 		font-weight: 400;
-		font-family: Noto Sans,sans-serif;
 		line-height: 24px;
 	}
-	.footer-half{
+	.footer-email{
 		color: #919191;
 		font-size: 16px;
 		font-weight: 400;
-		font-family: Noto Sans,sans-serif;
 		line-height: 24px;
 		padding-top: 24px;
 		padding-bottom: 40px;
@@ -1459,7 +1384,7 @@ img{
 
 	.footer-box img{
 		position: absolute;
-		padding-top: 9px;
+		top: 8px;
 		padding-bottom: 9px;
 		padding-left: 25px;
 		padding-right: 10px;
@@ -1477,7 +1402,6 @@ img{
 		color: #919191;
 		font-size: 20px;
 		font-weight: 700;
-		font-family: Noto Sans,sans-serif;
 		line-height: 30px;
 
 	}

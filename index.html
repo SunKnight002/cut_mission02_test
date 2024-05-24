@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>切版任務二_首頁</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="warp">
+    <div class="container">
         <div class="header">
-            <img  class="headerLogo" src="img/logo.svg" alt="Noel的logo">
+            <a href="index.html"><img  class="headerLogo" src="img/logo.svg" alt="Noel的logo"></a>
             <ul class="headerUL">
                   <li><a href="#">首頁</a></li>
                   <li><a href="#">作品集</a></li>
@@ -19,60 +20,60 @@
             </ul>
         </div>
 
-        <div class="content01">
-            <div class="content01-img">
-                <img src="img/hero-lg.png" alt="男人敲電腦">
-            </div>
-            <div class="content01-Text">
-                <h1 class="content01-Text-lg">Hi！我是 Noel</h1>
-                <p class="content01-Text-mid">具有 10 年經驗的<br class="mobile"> 資深UI 設計師 兼<img class="mark01" src="img/mark.png" alt=""> 前端工程師<img class="mark02" src="img/mark.png" alt=""></p>
-                <p class="content01-Text-mid">技術雙修並行，<br class="mobile">熱衷於優化使用者的網頁體驗</p>
-                <p class="content01-Text-sm">WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN</p>
+        <div class="profile-intro">
+            <div class="profile-intro-Text">
+                <h1 class="profile-intro-lg">Hi！我是 Noel</h1>
+                <p class="profile-intro-mid">具有 10 年經驗的 資深 UI 設計師 兼 前端工程師</p>
+                <img class="mark01" src="img/mark.png" alt="">
+                <img class="mark02" src="img/mark.png" alt="">
+                <p class="profile-intro-mid">技術雙修並行，熱衷於優化使用者的網頁體驗</p>
+                <p class="profile-intro-sm">WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN</p>
                 
-                
-                <div class="content01-Limg">
+                <div class="profile-intro-logo">
                     <img src="img/instagram.svg" alt="ig">
                     <img src="img/facebook.svg" alt="fb">
                     <img src="img/youtube.png" alt="yt">
                 </div>
             </div>
+
+            <div class="profile-intro-img">
+                <img src="img/hero-lg.png" alt="男人敲電腦">
+            </div>
         </div>
 
-        <div class="content02">
+        <div class="works-intro">
                 <img src="img/title-deco-left-lg.png" alt="">
                 <h2>作品介紹</h2>
                 <img src="img/title-deco-right-lg.png" alt="">
         </div>
 
-        <div class="content03">
-            <div class="content03-imgText">
-                <div class="content03-img">
+        <div class="work-star-travel">
+            <div class="work-star-travel-inside">
+                <div class="work-star-travel-bg">
                     <img src="img/homepage-work1.png" alt="">
                 </div>
 
-                <div class="content03-Text">
+                <div class="work-star-travel-Text">
                     <h3>星際旅行訂票平台</h3>
-                    <p class="content03-Text-P">悠遊宇宙的夢想，從這裡開始實現</p>
+                    <p class="work-star-travel-P">悠遊宇宙的夢想，從這裡開始實現</p>
                     <ul>
                         <a href="#"><li>網頁設計</li></a>
                         <a href="#"><li>響應式設計</li></a>
                         <a href="#"><li>Bootstrap</li></a>
                     </ul>
-                    <div class="White-Line-03"></div>
-                    <div class="Introduction-BTN-03">
-                        <p class="Introduction-BTN-P-03">完整介紹 →</p>
+                    <div class="White-Line"></div>
+                    <div class="Introduction-BTN">
+                        <input type="button" value="完整介紹 →" name="full-intro" style="width: 176px;height: 62px;">
                     </div>
                 </div>
-                
-                
             </div>
         </div>
 
-        <div class="content04">
-            <div class="content04-imgText">
-                <div class="content04-Text">
+        <div class="work-finance-APP">
+            <div class="work-finance-APP-inside">
+                <div class="work-finance-APP-Text">
                     <h4>理財app</h4>
-                    <p class="content04-Text-P">連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
+                    <p class="work-finance-APP-P">連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
                     <ul>
                         <a href="#"><li>APP設計</li></a>
                         <a href="#"><li>iOS</li></a>
@@ -80,19 +81,19 @@
                     </ul>
                     <div class="White-Line-04"></div>
                     <div class="Introduction-BTN-04">
-                        <p class="Introduction-BTN-P-04">完整介紹 →</p>
+                        <input type="button" value="完整介紹 →" name="full-intro" style="width: 176px;height: 62px;">
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
 
-        <div class="content05">
-            <div class="content05-imgText">
-                <div class="content05-img">
+        <div class="work-medical-beauty">
+            <div class="work-medical-beauty-inside">
+                <div class="work-medical-beauty-bg">
                     <img src="img/homepage-work3.png" alt="">
                 </div>
 
-                <div class="content05-Text">
+                <div class="work-medical-beauty-Text">
                     <h4>醫美診所官網</h4>
                     <p class="content05-Text-P">永保青春的秘密，從粹究開始</p>
                     <ul>
@@ -100,50 +101,50 @@
                         <a href="#"><li>響應式設計</li></a>
                         <a href="#"><li>ＷordPress</li></a>
                     </ul>
-                    <div class="White-Line-05"></div>
-                    <div class="Introduction-BTN-05">
-                        <p class="Introduction-BTN-P-05">完整介紹 →</p>
+                    <div class="White-Line"></div>
+                    <div class="Introduction-BTN">
+                        <input type="button" value="完整介紹 →" name="full-intro" style="width: 176px;height: 62px;">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="content06">
-            <div class="content06-title">
+        <div class="work-service-item">
+            <div class="work-service-item-title">
                 <img src="img/title-deco-left-lg.png" alt="">
                 <h5>服務項目</h5>
                 <img src="img/title-deco-right-lg.png" alt="">
             </div>
-            <div class="content06-text">
-                <div class="content06-imgText">
-                    <img class="c01-bot" src="img/service-item-bg.png" alt="">
-                    <img class="c01-top" src="img/service-item-visual.svg" alt="">
-                    <p class="c01-text">平面設計</p>
+            <div class="work-service-item-text">
+                <div class="work-service-item-inside">
+                    <img class="work-service-item-bg" src="img/service-item-bg.png" alt="">
+                    <img class="work-service-item-top" src="img/service-item-visual.svg" alt="">
+                    <p class="work-service-item-slogon">平面設計</p>
                 </div>
 
-                <div class="content06-imgText">
-                    <img class="c01-bot" src="img/service-item-bg.png" alt="">
-                    <img class="c01-top" src="img/service-item-ui.svg" alt="">
-                    <p class="c01-text">UI 設計</p>
+                <div class="work-service-item-inside">
+                    <img class="work-service-item-bg" src="img/service-item-bg.png" alt="">
+                    <img class="work-service-item-top" src="img/service-item-ui.svg" alt="">
+                    <p class="work-service-item-slogon">UI 設計</p>
                 </div>
 
-                <div class="content06-imgText">
-                    <img class="c01-bot" src="img/service-item-bg.png" alt="">
-                    <img class="c01-top" src="img/service-item-html&css.svg" alt="">
-                    <p class="c01-text">切版服務</p>
+                <div class="work-service-item-inside">
+                    <img class="work-service-item-bg" src="img/service-item-bg.png" alt="">
+                    <img class="work-service-item-top" src="img/service-item-html&css.svg" alt="">
+                    <p class="work-service-item-slogon">切版服務</p>
                 </div>
 
-                <div class="content06-imgText">
-                    <img class="c01-bot" src="img/service-item-bg.png" alt="">
-                    <img class="c01-top" src="img/service-item-front-end.svg" alt="">
-                    <p class="c01-text">前端開發</p>
+                <div class="work-service-item-inside">
+                    <img class="work-service-item-bg" src="img/service-item-bg.png" alt="">
+                    <img class="work-service-item-top" src="img/service-item-front-end.svg" alt="">
+                    <p class="work-service-item-slogon">前端開發</p>
                 </div>
             </div>
 
-            <p class="content06-footer">想要合作或瞭解更多？</p>
+            <p class="work-service-item-contact">想要合作或瞭解更多？</p>
             
-            <div class="Introduction-BTN-06">
-                <p class="Introduction-BTN-P-06">詳細內容與合作流程 →</p>
+            <div class="Introduction-BTN-detail">
+                <input type="button" value="詳細內容與合作流程 →" name="full-intro-more" style="width: 276px;height: 62px;">
             </div>
 
         </div>
@@ -193,17 +194,17 @@
         </div>
         <div class="footer">
             <div class="footer-text">
-                <img class="footer-small-logo" src="img/logo.svg" alt="">
+                <a href="index.html"><img class="footer-small-logo" src="img/logo.svg" alt=""></a>
                 <p class="footer-normal">若有數位產品設計和開發相關問題</p>
                 <p class="footer-normal">歡迎填寫表單，或直接與我聯絡！</p>
-                <p class="footer-half">service@hexschool.com</p>
+                <a href="mailto:service@hexschool.com"><p class="footer-email">service@hexschool.com</p></a>
             </div>
 
             <ul class="footer-UL">
-                <div class="footer-box">
+                <li class="footer-box">
                     <img src="img/list.svg" alt="">
-                    <li><a href="#">填寫表單</a></li>
-                </div>
+                    <p><a href="#">填寫表單</a></p>
+                </li>
                 <div class="footer-box">
                     <img src="img/instagram.svg" alt="">
                     <li><a href="#">hexschool_demo</a></li>
@@ -212,27 +213,8 @@
                     <img src="img/facebook.svg" alt="">
                     <li><a href="#">hexschoolTW</a></li>
                 </div>
-
-                
-                
             </ul>
-    
         </div>
-
-
-
-
-
-
-
-
-
     </div>
-
-
-
-
-
-
 </body>
 </html>
