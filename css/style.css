@@ -61,9 +61,6 @@ img{
     max-width: 1920px;
     margin: 0 auto;
 }
-.mobile{
-	display: none;
-}
 
 /*你好，冒險者，以下是header區域*/
 
@@ -120,6 +117,7 @@ img{
 
 .profile-intro{
 	display: flex;
+	align-items: center;
 }
 
 .profile-intro-logo{
@@ -132,6 +130,9 @@ img{
 .profile-intro-img{
 	padding-left: 24px;
 	display: block;
+}
+.profile-intro-picture02{
+	display: none;
 }
 
 .profile-intro-Text{
@@ -434,7 +435,6 @@ input:hover{
 	background-color: rgba(255, 255, 255, 20%);
 	border-radius: 24px;
 	height: 400px;
-	padding-left: 55px;
 	padding-bottom: 200px;
 	padding-left: 40px;
 }
@@ -446,7 +446,7 @@ input:hover{
 	padding-top: 80px;
 	padding-right: 262px;
 }
-.content05-Text-P{
+.work-medical-beauty-P{
 	color: #fff;
 	font-size: 16px;
 	font-weight: 400;
@@ -484,7 +484,7 @@ input:hover{
 	background-repeat: no-repeat;
 	background-image: url("../img/homepage-services-bg.png");
 	width:100%;
-	height: 881px;
+	height: 570px;
 }
 .work-service-item-title{
 	display: flex;
@@ -555,26 +555,28 @@ input:hover{
 }
 
 
-/*你好，冒險者，以下是content07區域，也就是精選文章區域*/
+/*你好，冒險者，以下是work-featured-articles區域，也就是精選文章區域*/
 
 
-.content07{
+.work-featured-articles{
  background: #fff;
 }
-.content07-title{
+.work-featured-articles-title{
 	display: flex;
 	justify-content:center;
 	align-items:center;
 	padding-top: 120px;
 	padding-bottom: 80px;
 }
-.content07-title h6{
+.work-featured-articles-title h6{
 	color: #3B3B3B;
 	font-size: 32px ;
 	font-weight: 600;
 	line-height: 38.4px;
+	padding-right: 15px;
+	padding-left: 15px;
 }
-.content07-imgText{
+.work-featured-articles-inside{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -722,20 +724,17 @@ input:hover{
 }
 
 
-/*你好，冒險者，以下是375尺寸會看到的世界*/
+/*你好，冒險者，以下是1200尺寸會看到的世界*/
 
 
-@media (max-width:992px)
+@media (max-width:1200px)
 {
 	/*這邊開始寫你規劃的css*/
 	/*你好，冒險者，以下是header區域*/
 	.container{
-		max-width: 375px;
+		max-width: 100%;
 		margin: 0 auto;
 	}
-	.mobile{
-        display:block;
-    }
 	.header{
 		background: #fff;
 		display: flex;
@@ -749,14 +748,12 @@ input:hover{
 	}
 	.headerUL{
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding-left: 150px;
+		margin-left: 650px;
 	}
 	
 	.headerUL li{
-		padding-top: 3px;
 		padding-bottom: 24px;
 		padding-right: 4px;
 	}
@@ -776,21 +773,29 @@ input:hover{
 
 	.profile-intro{
 		display: flex;
-		flex-direction:column;
-		justify-content: left;
+		flex-direction:row;
+		justify-content: center;
 		align-items: center;
 	}
-	.profile-intro img{
-		padding-left: 0px;
-		background-image: url(../img/hero-sm.png);
+	.profile-intro-picture01{
+		display: block;
+		width: 90%;
+		margin-bottom: 20px;
+		margin-left: 50px;
 	}
+	.profile-intro-picture02{
+		display: none;
+	}
+
 	.profile-intro-Text{
-		padding-left: 0px;
+		max-width: 470px;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		margin-left: 0px;
+		margin-top:60px;
 	}
 	.profile-intro-lg{
 		color: #3B3B3B;
@@ -801,7 +806,7 @@ input:hover{
 		padding-top: 40px;
 	}
 	.profile-intro-mid{
-		width: 300px;
+		width: 500px;
 		color: #5B5B5B;
 		font-size: 20px;
 		font-weight: 400;
@@ -809,10 +814,16 @@ input:hover{
 		padding-bottom: 8px;
 	}
 	.mark01{
-		padding-left: 75px;
+		position: absolute;
+		width: 148px;
+		top: 130px;
+		left: 170px;
 	}
 	.mark02{
-		padding-left: 80px;
+		position: absolute;
+		width: 130px;
+		top: 130px;
+		left: 330px;
 	}
 	.profile-intro-{
 		width: 270px;
@@ -833,25 +844,20 @@ input:hover{
 	.profile-intro-logo img{
 		padding-right: 24px;
 		padding-bottom: 45.71px;
+		margin-bottom: 0px;
 	}
 	
 	
 	/*你好，冒險者，以下是works-intro區域，也就是作品介紹區域*/
 
 	.works-intro{
-		display: flex;
-		justify-content:center;
-		align-items:center;
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
 	.works-intro h2{
-		color: #000;
 		font-size: 24px;
 		font-weight: 700;
 		line-height: 28.8px;
-		padding-left: 16px;
-		padding-right: 16px;
 	}
 
 
@@ -878,10 +884,6 @@ input:hover{
 		height: 100%;
 	}
 	.work-star-travel-inside{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 		background-color: rgba(0, 0, 0, 0.5); /* 半透明的黑色遮罩 */
 		position: relative;
 	}
@@ -892,32 +894,21 @@ input:hover{
 	}
 	.work-star-travel-Text{
 		width: 526px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items:center;
 		background: #fff;
-		border-radius: 0px;
-		padding-left: 0px;
-		height: 100%;
+		background-color: rgba(255, 255, 255, 20%);
+		padding-left: 40px;
 	}
 	.work-star-travel-Text h3{
 		text-align: center;
-		color: #000;
-		font-size:24px ;
-		font-weight:700;
+		color: #fff;
 		line-height:24px ;
-		padding-top: 24px;
+		padding-top: 110px;
 		padding-right: 30px;
 		padding-left: 0px;
 		padding-bottom: 8px;
 	}
 	.work-star-travel-P{
 		text-align: center;
-		color: #5B5B5B;
-		font-size: 16px;
-		font-weight: 400;
-		line-height: 24px;
 		padding-top: 0px;
 		padding-right: 60px;
 		padding-bottom: 16px;
@@ -944,30 +935,10 @@ input:hover{
 		padding-right: 18px;
 		padding-bottom: 20px;
 	}
-	.White-Line-03{
-		width: 100px;
-		height: 1px;
-		padding-bottom: 0px;
+	.White-Line {
+		width: 400px;
 	}
-	.Introduction-BTN-03{
-		width: 128px;
-		height: 40px;
-		background: #000000;
-		border-radius: 5px;
-		margin-left: 5px;
-		margin-bottom: 48px;
-	}
-	.Introduction-BTN-P-03{
-		font-size: 16px;
-		color: #fff;
-		text-align: center;
-		line-height: 24px;
-		font-weight: 700;
-		padding-top: 0px;
-		padding-right: 3px;
-		margin-bottom: 60px;
-		margin-top: 10px;
-	}
+
 	
 	
 
@@ -975,76 +946,21 @@ input:hover{
 
 
 	.work-finance-APP{
-		display: flex;
-		background-image: url("../img/homepage-work2-sm.png");
-		background-repeat: no-repeat;
-		background-attachment: scroll;
-		height: 100%;
+		background-image: url("../img/homepage-work2-lg.png");
 	}
 	.work-finance-APP-inside{
-		width: 100%;
-		background: none;
-		background-color: rgba(10, 16, 19, 0%);
-		padding-top: 390px;
-		padding-left: 0px;
+		width: 680px;
+		padding-top: 200px;
+		padding-bottom: 0px;
+		padding-left: 90px;
 		padding-right: 0px;
-		padding-bottom: 0px;
-	}
-	.work-finance-APP{
-		background: #fff;
-		border-radius: 0px;
-		height: 100%;
-	}
-	.White-Line-04{
-		width: 20px;
-		height: 0px;
-		border-top: solid #fff 0px;
-		padding-bottom: 0px;
-		margin-left: 0px;
-	}
-	.Introduction-BTN-04{
-		width: 128px;
-		height: 40px;
-		background: #000000;
-		border-radius: 5px;
-		margin-left: 100px;
-		margin-bottom: 56px;
 	}
 
-	.work-finance-APPt h4{
-		text-align: center;
-		color: #1E1E1E;
-		font-size:20px ;
-		font-weight:700;
-		line-height:24px ;
-		padding-left: 0px;
-		padding-top: 20px;
-		padding-right: 0px;
-	}
 	.work-finance-APP-P{
-		width: 327px;
-		text-align: center;
-		color: #5B5B5B;
-		font-size: 16px;
-		font-weight: 400;
-		line-height: 24px;
+		text-align: left;
 		padding-top: 8px;
-		padding-left: 18px;
 	}
-	.work-finance-APP ul{
-		width: 100%;
-		padding-top: 16px;
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		padding-left: 65px;
-	}
-	.work-finance-APP li{
-		width: 140%;
-		color: #3B3B3B;
-		background: #F1F1F1;
-		border-radius: 16px;
-	}
+	
 	.work-finance-APP-Textt a{
 		color: #3B3B3B;
 		text-align: center;
@@ -1057,12 +973,9 @@ input:hover{
 	}
 
 	
-	/*你好，冒險者，以下是content05區域，也就是醫療美容區域*/
+	/*你好，冒險者，以下是work-medical-beauty區域，也就是醫療美容區域*/
 
-	.content05{
-		position: relative; 
-	}
-	.content05::before {
+	.work-medical-beauty::before {
 		content:'';
 		position: absolute;
 		background-size:cover;
@@ -1119,14 +1032,6 @@ input:hover{
 		padding-bottom: 16px;
 		padding-right: 3px;
 	}
-	.work-medical-beauty-inside{
-		background-color: rgba(0, 0, 0, 0.5); /* 半透明的黑色遮罩 */
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
 	
 	
 	.work-medical-beauty- h4{
@@ -1137,14 +1042,6 @@ input:hover{
 		line-height:24px ;
 		padding-top: 24px;
 		padding-right: 0px;
-	}
-	.content05-Text-P{
-		text-align: center;
-		color: #5B5B5B;
-		font-size: 16px;
-		font-weight: 400;
-		line-height: 24px;
-		padding-top: 8px;
 	}
 	.work-medical-beauty- ul{
 		padding-top: 16px;
@@ -1174,59 +1071,30 @@ input:hover{
 	/*你好，冒險者，以下是work-service-item區域，也就是服務項目區域*/
 
 
-	.work-service-item{
-		background-position: center;
-		background-repeat: no-repeat;
-		background-image: url("../img/homepage-services-bg.png");
-		width:100%;
-		height: 100%;
-	}
 	.work-service-item-title{
-		display: flex;
-		justify-content:center;
-		align-items:center;
 		padding-top: 80px;
 		padding-bottom: 40px;
 	}
 	.work-service-item-title h5{
-		color: #3B3B3B;
 		font-size: 24px ;
 		font-weight: 700;
 		line-height: 28.8px;
 	}
-	.work-service-item-text{
-		display: flex;
-		flex-direction: column;
-		justify-content:center;
-		align-items: center;
-	}
 	.work-service-item-inside{
-		display: flex;
-		flex-direction: column;
-		justify-content:flex-start;
-		align-items: center;
 		padding-right: 34.5px;
 		padding-left: 34.5px;
 		padding-bottom: 24px;
 	}
 	.work-service-item-bg{
-		position: relative; 
 		border-radius: 16px;
 	}
 	.work-service-item-top{
-		position: absolute;
-		padding-top: 86.5px;
+		padding-top: 40px;
 	}
 	.work-service-item-slogon{
-		position: absolute;
-		color: #FFFFFF;
-		font-size: 28px;
-		font-weight: 700;
-		line-height: 42px;
-		padding-top: 180px;
+		padding-top: 140px;
 	}
 	.work-service-item-contact{
-		color: #3B3B3B;
 		font-size: 20px ;
 		font-weight: 700;
 		line-height: 24px;
@@ -1234,40 +1102,22 @@ input:hover{
 		padding-bottom: 24px;
 	}
 	.Introduction-BTN-detail{
-		width: 208px;
-		height: 40px;
-		background: #000000;
-		border-radius: 5px;
-		margin-left: 70px;
+		margin-left: 450px;
 		margin-bottom: 88px;
 	}
 
 
 
-	/*你好，冒險者，以下是content07區域，也就是精選文章區域*/
+	/*你好，冒險者，以下是work-featured-articles區域，也就是精選文章區域*/
 
-
-	.content07{
-		background: #fff;
-	}
-	.content07-title{
-		display: flex;
-		justify-content:center;
-		align-items:center;
+	.work-featured-articles-title{
 		padding-top: 80px;
 		padding-bottom: 40px;
 	}
-	.content07-title h6{
-		color: #3B3B3B;
+	.work-featured-articles-title h6{
 		font-size: 24px ;
 		font-weight: 700;
 		line-height: 28.8px;
-	}
-	.content07-imgText{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 	}
 	.content07-box{
 		width: 100%;
@@ -1278,43 +1128,15 @@ input:hover{
 	.content07-box img{
 		border-radius: 8px;
 	}
-
-	.content07-box-time{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
 	.con07-title{
 		width: 335px;
-		color: #3B3B3B;
-		font-size: 20px ;
 		font-weight: 600;
-		line-height: 24px;
-		padding-top: 16px;
-		padding-bottom: 16px;
 		padding-left: 4px;
 	}
 	.con07-tag{
-		width: 105px;
-		background: #F1F1F1;
-		border-radius:16px;
-		text-align: center;
-		color: #3B3B3B;
-		font-size: 16px ;
-		font-weight: 400;
-		line-height: 24px;
-		padding-top: 4px;
-		padding-bottom: 4px;
-		padding-left: 4px;
 		margin-left: 12px;
 	}
 	.con07-time{
-		color: #5B5B5B;
-		font-size: 16px ;
-		font-weight: 400;
-		line-height: 24px;
-		padding-top: 4px;
-		padding-right: 8px;
 		margin-right: 8px;
 	}
 	.content07-footer{
@@ -1338,10 +1160,6 @@ input:hover{
 	/*你好，冒險者，以下是footer區域*/
 
 	.footer{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 		background-image: url(../img/footer-bg-sm.png);
 	}
 	.footer-small-logo{
@@ -1357,52 +1175,24 @@ input:hover{
 		padding-right: 0px;
 	}
 	.footer-text{
-		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
 	.footer-normal{
-		color: #3B3B3B;
 		font-size: 16px;
-		font-weight: 400;
 		line-height: 24px;
 	}
 	.footer-email{
-		color: #919191;
 		font-size: 16px;
-		font-weight: 400;
-		line-height: 24px;
-		padding-top: 24px;
 		padding-bottom: 40px;
 	}
 	.footer-box{
 		position: relative;
 		color: #919191;
 	}
-
-	.footer-box img{
-		position: absolute;
-		top: 8px;
-		padding-bottom: 9px;
-		padding-left: 25px;
-		padding-right: 10px;
-	}
-
 	.footer-UL li{
-		width: 306px;
-		border: 1px solid #C1C1C1;
-		background: #FFFFFF;
 		margin-bottom: 24px;
-		padding-top: 21px;
-		padding-bottom: 21px;
-		border-radius: 8px;
-		text-align:left;
-		color: #919191;
-		font-size: 20px;
 		font-weight: 700;
-		line-height: 30px;
-
 	}
 	.footer-UL a{
 		text-decoration: none;
