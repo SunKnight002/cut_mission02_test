@@ -727,19 +727,11 @@ input:hover{
 /*你好，冒險者，以下是1200尺寸會看到的世界*/
 
 
-@media (max-width:1200px)
+@media(max-width: 1200px)
 {
 	/*這邊開始寫你規劃的css*/
 	/*你好，冒險者，以下是header區域*/
-	.container{
-		max-width: 100%;
-		margin: 0 auto;
-	}
-	.header{
-		background: #fff;
-		display: flex;
-		align-items: center;
-	}
+
 	.headerLogo{
 		padding-left: 12px;
 		padding-top: 11.5px;
@@ -752,7 +744,6 @@ input:hover{
 		align-items: center;
 		margin-left: 650px;
 	}
-	
 	.headerUL li{
 		padding-bottom: 24px;
 		padding-right: 4px;
@@ -1208,6 +1199,4 @@ input:hover{
 		background: black;
 		color: #fff;
 	}
-
-
 }
