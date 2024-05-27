@@ -87,7 +87,6 @@ img{
 	padding-top: 32px;
 	padding-bottom: 32px;
 	padding-right: 40px;
-
 }
 .headerUL li a{
 	width: 48px;
@@ -114,7 +113,9 @@ img{
 
 
 /*你好，冒險者，以下是profile-intro區域*/
-
+.mobile{
+	display: none;
+}
 .profile-intro{
 	display: flex;
 	align-items: center;
@@ -127,10 +128,7 @@ img{
 	padding-right: 24px;
 	margin-bottom: 248px;
 }
-.profile-intro-img{
-	padding-left: 24px;
-	display: block;
-}
+
 .profile-intro-picture02{
 	display: none;
 }
@@ -140,8 +138,10 @@ img{
 	margin-top: 248px;
 	margin-left: 312px;
 }
+.profile-intro-picture01 {
+	margin-left: 24px;
+}
 .profile-intro-lg{
-	width: 430px;
 	color: #3B3B3B;
 	font-size: 40px;
 	font-weight: 600;
@@ -191,7 +191,7 @@ img{
 }
 
 .works-intro h2{
-	color: #000;
+	color: #3B3B3B;
 	font-size: 32px;
 	font-weight: 600;
 	line-height: 38.4px;
@@ -309,15 +309,54 @@ input:hover{
 
 
 /*你好，冒險者，以下是work-finance-APP區域，也就是理財APP區域*/
-
+.work-star-travel::before {
+	content:'';
+	position: absolute;
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	/*background-image: url("https://i.postimg.cc/Zq93vSw3/homepage-work1-bg.png");*/
+	background-image: url("../img/homepage-work1-bg.png");
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+.work-star-travel-inside{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5); /* 半透明的黑色遮罩 */
+	position: relative;
+}
 
 .work-finance-APP{
 	display: flex;
 	background-image: url("../img/homepage-work2-lg.png");
 	background-repeat: no-repeat;
 	background-attachment: scroll;
-	height: 800px;
+	height: auto;
+	width: 100%;
+	position: relative; 
 }
+.work-finance-APP::before {
+	content:'';
+	position: absolute;
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	/*background-image: url("https://i.postimg.cc/Zq93vSw3/homepage-work1-bg.png");*/
+	background-image: url("../img/homepage-work2-lg.png");
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+  .work-finance-APP-inside{
+	background-color: rgba(0, 0, 0, 0.5); /* 半透明的黑色遮罩 */
+	position: relative; 
+  }
+
 
 .work-finance-APP-Text{
 	width: 526px;
@@ -325,15 +364,16 @@ input:hover{
 	background-color: rgba(255, 255, 255, 10%);
 	border-radius: 24px;
 	height: 400px;
+	position: relative; 
 }
 
 .work-finance-APP-inside{
-	width: 948px;
+	width: 50%;
 	background: #0A101380;
 	background-color: rgba(10, 16, 19, 50%);
 	padding-top: 200px;
-	padding-left: 312px;
-	padding-right: 110px;
+	padding-left: 250px;
+	padding-right: 100px;
 	padding-bottom: 200px;
 }
 .work-finance-APP h4{
@@ -428,7 +468,6 @@ input:hover{
 	padding-bottom: 112px;
 }
 .work-medical-beauty-Text{
-	width: 526px;
 	display: flex;
 	flex-direction: column;
 	background: #fff;
@@ -733,17 +772,14 @@ input:hover{
 	/*你好，冒險者，以下是header區域*/
 
 	.headerLogo{
-		margin-left: 200px;
+		margin-left: 250px;
 		padding-left: 0px;
 		padding-top: 11.5px;
 		padding-bottom: 11.5px;
 		padding-right: 15px;
 	}
 	.headerUL{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-left: 470px;
+		margin-left: 440px;
 	}
 	.headerUL li{
 		padding-bottom: 24px;
@@ -770,23 +806,19 @@ input:hover{
 		align-items: center;
 	}
 	.profile-intro-picture01{
-		display: block;
-		width: 90%;
 		margin-bottom: 20px;
-		margin-left: 50px;
+		margin-left: 130px;
 	}
 	.profile-intro-picture02{
 		display: none;
 	}
-
+	.profile-intro-img{
+		max-width: 40%;
+	}
 	.profile-intro-Text{
-		max-width: 470px;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		margin-left: 0px;
+		max-width: 60%;
+		text-align: left;
+		margin-left: 20px;
 		margin-top:60px;
 	}
 	.profile-intro-lg{
@@ -798,7 +830,6 @@ input:hover{
 		padding-top: 40px;
 	}
 	.profile-intro-mid{
-		width: 500px;
 		color: #5B5B5B;
 		font-size: 20px;
 		font-weight: 400;
@@ -807,15 +838,15 @@ input:hover{
 	}
 	.mark01{
 		position: absolute;
-		width: 148px;
+		width: 135px;
 		top: 130px;
-		left: 170px;
+		left: 150px;
 	}
 	.mark02{
 		position: absolute;
-		width: 130px;
+		width: 110px;
 		top: 130px;
-		left: 330px;
+		left: 300px;
 	}
 	.profile-intro-{
 		width: 270px;
@@ -875,17 +906,14 @@ input:hover{
 		width: 100%;
 		height: 100%;
 	}
-	.work-star-travel-inside{
-		background-color: rgba(0, 0, 0, 0.5); /* 半透明的黑色遮罩 */
-		position: relative;
-	}
 	.work-star-travel-bg{
+		max-width: 50%;
 		padding-top: 93px;
 		padding-right: 39.92px;
 		padding-left: 40px;
 	}
 	.work-star-travel-Text{
-		width: 526px;
+		max-width: 50%;
 		background: #fff;
 		background-color: rgba(255, 255, 255, 20%);
 		padding-left: 40px;
@@ -895,7 +923,7 @@ input:hover{
 		color: #fff;
 		line-height:24px ;
 		padding-top: 110px;
-		padding-right: 30px;
+		padding-right: 180px;
 		padding-left: 0px;
 		padding-bottom: 8px;
 	}
@@ -919,9 +947,11 @@ input:hover{
 		padding-bottom: 20px;
 	}
 	.White-Line {
-		width: 400px;
+		width: 340px;
 	}
-
+	.Introduction-BTN {
+		margin-left: 80px;
+	}
 	
 	
 
@@ -930,12 +960,13 @@ input:hover{
 
 	.work-finance-APP{
 		background-image: url("../img/homepage-work2-lg.png");
+		height: auto;
 	}
 	.work-finance-APP-inside{
-		width: 680px;
+		width: 640px;
 		padding-top: 200px;
 		padding-bottom: 0px;
-		padding-left: 90px;
+		padding-left: 50px;
 		padding-right: 0px;
 	}
 
@@ -972,22 +1003,17 @@ input:hover{
 		height: 100%;
 	}
 	.work-medical-beauty-bg{
+		max-width: 50%;
 		padding-top: 100px;
-		padding-right: 30px;
+		padding-right: 39.92px;
 		padding-bottom: 60px;
-		padding-left: 30px;
+		padding-left: 40px;
 	}
-	.content05-Text{
-		display: flex;
-		flex-direction: column;
-		background: #fff;
-		background-color: rgba(255, 255, 255, 100%);
-		border-radius: 0px;
-		height: 100%;
-		width: 100%;
-		padding-left: 0px;
-		padding-bottom: 0px;
-		padding-left: 0px;
+	.work-medical-beauty-Text {
+		max-width: 50%;
+	}
+	.work-medical-beauty-Text h4 {
+		padding-right: 120px;
 	}
 	.White-Line-05{
 		width: 0px;
@@ -1104,8 +1130,8 @@ input:hover{
 	}
 	.content07-box{
 		width: 100%;
-		padding-right: 12px;
-		padding-left: 12px;
+		padding-right: 6px;
+		padding-left: 6px;
 		padding-bottom: 48px;
 	}
 	.content07-box img{
@@ -1191,4 +1217,213 @@ input:hover{
 		background: black;
 		color: #fff;
 	}
+}
+
+
+/*你好，冒險者，以下是992尺寸會看到的世界*/
+
+
+@media(max-width: 992px)
+{
+	.headerUL{
+		margin-left: 285px;
+	}
+	.headerUL li {
+		padding-right: 0px;
+	}
+	.headerUL li a {
+		margin-right: 10px;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.profile-intro-img{
+		padding-left: 12px;
+	}
+	.profile-intro-Text{
+		margin-left: 20px;
+	}
+	.profile-intro-picture01 {
+		margin-left: 85px;
+	}
+
+
+	.work-star-travel-bg {
+		padding-right: 20px;
+	}
+	.White-Line {
+		width: 340px;
+	}
+	.Introduction-BTN {
+		margin-left: 90px;
+	}
+
+	.work-finance-APP-inside {
+		width: 550px;
+		padding-left: 40px;
+	}
+	.work-finance-APP-Text {
+		width: 470px;
+	}
+	.White-Line-04 {
+		width: 380px;
+	}
+	.Introduction-BTN-04 {
+		margin-left: 140px;
+	}
+
+	.work-service-item-slogon {
+		padding-top: 120px;
+	}
+	.Introduction-BTN-detail {
+		margin-left: 350px;
+	}
+
+	.work-medical-beauty-bg {
+		padding-right: 25px;
+	}
+	.work-medical-beauty-Text h4 {
+		padding-right: 0px;
+		margin-right: 250px;
+	}
+	.content07-box {
+		width: 33.33%;
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+}
+
+
+/*你好，冒險者，以下是767尺寸會看到的世界*/
+
+
+@media(max-width: 767px)
+{
+
+	.headerLogo {
+        margin-left: 0px;
+        padding-left: 17.76px;
+        padding-top: 17.28px;
+        padding-bottom: 17.89px;
+        padding-right: 15px;
+    }
+	.headerUL {
+        margin-left: 290px;
+    }
+	.profile-intro {
+		flex-direction: column-reverse;
+	}
+	.profile-intro-img {
+        max-width: 100%;
+		padding-left: 0px;
+    }
+	.profile-intro-picture01 {
+        margin-left: 0px;
+    }
+	.profile-intro-Text {
+		text-align: center;
+	}
+	.profile-intro-mid {
+		border: 1px solid black;
+	}
+	.mobile{
+		display: block;
+	}
+	.mark01{
+		top: 160px;
+		left: 0px;
+	}
+	.mark02{
+		top: 160px;
+		left: 155px;
+	}
+	.profile-intro-sm {
+		padding-bottom: 24px;
+	}
+	.profile-intro-logo {
+		margin-left: 25px;
+	}
+	.profile-intro-logo img {
+		padding-right: 16px;
+		padding-bottom: 40px;
+	}
+
+	.work-star-travel-inside {
+		flex-direction: column;
+	}
+	.work-star-travel-bg {
+		max-width: 100%;
+		background-image: none;
+		padding-top: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.work-star-travel-bg img{
+		max-width: 90%;
+		padding-top: 90px;
+		padding-right: 39.92px;
+		padding-left: 90px;
+	}
+
+
+	.work-star-travel-Text {
+		width: 767px;
+		height: auto;
+		max-width: 100%;
+		background: #fff;
+		border-radius: 0px;
+		padding-left: 0px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.work-star-travel-Text h3 {
+		color: #1E1E1E;
+		font-size: 20px;
+		padding-top: 24px;
+		padding-left: 180px;
+		padding-right: 180px;
+	}
+	.work-star-travel-P {
+		color: #5B5B5B;
+		padding-right: 180px;
+		padding-left: 180px;
+	}
+	.White-Line {
+		display: none;
+	}
+	.Introduction-BTN {
+		margin-left: 0px;
+		margin-bottom: 40px;
+	}
+
+	.work-finance-APP {
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+		background-image: url(../img/homepage-work2-lg.png);
+	}
+	.work-finance-APP-inside {
+		width: 100%;
+	}
+}
+
+
+
+/*你好，冒險者，以下是414尺寸會看到的世界*/
+
+
+@media(max-width: 414px)
+{
+
+}
+
+
+
+/*你好，冒險者，以下是375尺寸會看到的世界*/
+
+
+@media(max-width: 375px)
+{
+
 }
