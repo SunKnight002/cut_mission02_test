@@ -125,6 +125,7 @@ img{
 .profile-intro{
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .profile-intro-logo{
@@ -141,17 +142,18 @@ img{
 
 .profile-intro-Text{
 	position: relative;
-	margin-top: 248px;
-	margin-left: 312px;
+	margin-left: 300px;
 }
 .profile-intro-picture01 {
-	margin-left: 24px;
+	/*max-width: 600px;*/
+	padding-left: 24px;
 }
 .profile-intro-lg{
 	color: #3B3B3B;
 	font-size: 40px;
 	font-weight: 600;
 	line-height: 48px;
+	padding-top: 249px;
 	padding-bottom: 24px;
 	
 }
@@ -165,13 +167,13 @@ img{
 .mark01{
 	position: absolute;
 	width: 148px;
-	top: 100px;
+	top: 350px;
 	left: 150px;
 }
 .mark02{
 	position: absolute;
 	width: 119px;
-	top: 100px;
+	top: 350px;
 	left: 310px;
 }
 
@@ -271,7 +273,7 @@ img{
 }
 
 input{
-	width: 176px;
+	width: 250px;
 	height: 62px;
 	border:0;
 	background: #000000;
@@ -1588,5 +1590,15 @@ input:hover{
 		width: 128px;
 		height: 40px;
 		margin-left: 100px;
+	}
+	.work-medical-beauty-Text ul {
+		padding-left: 0px;
+	}
+
+	.Introduction-BTN-detail {
+		margin-left: 50px;
+	}
+	.content07-box {
+		width: 100%;
 	}
 }
