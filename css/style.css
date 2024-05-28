@@ -266,7 +266,7 @@ img{
 	padding-top: 8px;
 }
 .White-Line{
-	width: 440px;
+	width: 400px;
 	height: 1px;
 	border-top: solid #fff 1px;
 	margin-bottom: 40px;
@@ -291,7 +291,7 @@ input:hover{
 
 
 .Introduction-BTN{
-	margin-left: 120px;
+	margin-left: 80px;
 }
 
 .work-star-travel-Text ul{
@@ -391,17 +391,18 @@ input:hover{
 	font-size:28px ;
 	font-weight:700;
 	line-height:33.6px ;
-	padding-left: 40px;
+	text-align: left;
 	padding-top: 80px;
-	padding-right: 262px;
+	padding-left: 40px;
 }
 .work-finance-APP-P{
+	text-align: left;
 	color: #fff;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 	padding-top: 8px;
-	padding-left: 40px;
+	padding-left: 40px;;
 }
 .work-finance-APP ul{
 	padding-top: 24px;
@@ -440,7 +441,7 @@ input:hover{
 	height: 62px;
 	background: #000000;
 	border-radius: 5px;
-	margin-left: 180px;
+	margin-left: 140px;
 	margin-bottom: 56px;
 }
 
@@ -473,7 +474,7 @@ input:hover{
 }
 .work-medical-beauty-bg{
 	padding-top: 176px;
-	padding-right: 49px;
+	padding-right: 25px;
 	padding-bottom: 112px;
 }
 .work-medical-beauty-Text{
@@ -1432,8 +1433,10 @@ input:hover{
 		display: none;
 	}
 	.work-finance-APP h4 {
-		padding-left: 350px;
+		text-align: center;
+		padding-left: 0px;
 		color: #1E1E1E;
+		padding-top: 40px;
 	}
 	.work-finance-APP-P {
 		color: #5B5B5B;
@@ -1451,7 +1454,7 @@ input:hover{
 		padding-bottom: 20px;
 	}
 	.Introduction-BTN-04{
-		margin-left: 300px;
+		margin-left: 250px;
 	}
 
 
@@ -1508,7 +1511,7 @@ input:hover{
 		padding-top: 180px;
 	}
 	.Introduction-BTN-detail {
-		margin-left: 230px;
+		margin-left: 240px;
 	}
 
 
@@ -1520,6 +1523,101 @@ input:hover{
 	}
 	.footer {
 		flex-direction: column;
+	}
+
+}
+
+@media(max-width: 576px)
+{
+    .headerUL {
+		margin-left: 95px;
+	}
+	.headerUL li {
+		width: auto;
+	}
+	.work-finance-APP h4 {
+		font-size: 20px;
+		padding-top: 40px;
+		text-align: center;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.work-finance-APP-P {
+		padding-left: 0px;
+		padding-right: 0px;
+		text-align: center;
+	}
+	.work-finance-APP ul {
+		display: flex;
+		justify-content: center;
+		padding-left: 0px;
+	}
+	.Introduction-BTN-04 {
+		margin-left: 160px;
+	}
+	.work-medical-beauty-Text ul {
+		display: flex;
+		justify-content: center;
+        padding-left: 0px;
+    }
+	.Introduction-BTN-detail {
+		margin-left: 150px;
+	}
+	.content07-box {
+		width: 100%;
+	}
+	.content07-box img {
+		padding-left: 80px;;
+	}
+}
+
+@media(max-width: 414px)
+{
+	.headerLogo {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.headerUL {
+		margin-left: 20px;
+	}
+	.headerUL li a {
+		font-size: 16px;
+	}
+	.profile-intro-Text {
+		margin-left: 0px;
+	}
+	.profile-intro-Text {
+		max-width: 70%;
+	}
+	.work-finance-APP h4 {
+		font-size: 28px;
+	}
+	.work-star-travel-Text h3 {
+		font-size: 28px;
+		padding-top: 40px;
+		padding-left: 0px;
+		padding-right: 0px;
+		text-align: center;
+	}
+	.work-star-travel-P {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.Introduction-BTN-04 {
+		margin-left: 80px;
+	}
+	.work-medical-beauty-Text h4 {
+		font-size: 28px;
+		padding-top: 24px;
+	}
+	.Introduction-BTN-detail {
+		margin-left: 80px;
+	}
+	.work-featured-articles-title {
+		padding-top: 40px;
+	}
+	.content07-box img {
+		padding-left: 0px;
 	}
 
 }
@@ -1589,7 +1687,7 @@ input:hover{
 	.Introduction-BTN-04 {
 		width: 128px;
 		height: 40px;
-		margin-left: 100px;
+		margin-left: 80px;
 	}
 	.work-medical-beauty-Text ul {
 		padding-left: 0px;
