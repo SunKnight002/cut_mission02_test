@@ -119,7 +119,7 @@ img{
 .mobile767{
 	display: none;
 }
-.mobile325{
+.mobile375{
 	display: none;
 }
 .profile-intro{
@@ -271,6 +271,8 @@ img{
 }
 
 input{
+	width: 176px;
+	height: 62px;
 	border:0;
 	background: #000000;
 	color:#fff;
@@ -1526,5 +1528,65 @@ input:hover{
 
 @media(max-width: 375px)
 {
-
+	.headerUL {
+		margin-left: 60px;
+	}
+	.headerUL li {
+		width: 20px;
+		margin-right: 20px;
+	}
+	.headerUL li a {
+		margin-right: 0px;
+	}
+	.profile-intro-picture01{
+		display: none;
+	}
+	.profile-intro-picture02{
+		display: block;
+	}
+	.profile-intro-Text {
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	.profile-intro-mid {
+		width: 268px;
+	}
+	.work-star-travel-Text {
+		width: 375px;
+	}
+	.work-star-travel-Text h3 {
+		padding-left: 0px;
+        padding-right: 0px;
+	}
+	.work-star-travel-P {
+		padding-left: 0px;
+        padding-right: 0px;
+	}
+	.mobile375{
+		display: block;
+	}
+	.mobile767{
+		display: none;
+	}
+	.work-finance-APP-Text {
+		text-align: center;
+	}
+	.work-finance-APP h4 {
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-top: 24px;
+	}
+	.work-finance-APP-P {
+		width: 327px;
+		padding-left: 15px;
+		text-align: center;
+	}
+	.work-finance-APP ul {
+		padding-left: 35px;
+	}
+	.Introduction-BTN-04 {
+		width: 128px;
+		height: 40px;
+		margin-left: 100px;
+	}
 }
