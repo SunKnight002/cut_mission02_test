@@ -116,6 +116,12 @@ img{
 .mobile{
 	display: none;
 }
+.mobile767{
+	display: none;
+}
+.mobile325{
+	display: none;
+}
 .profile-intro{
 	display: flex;
 	align-items: center;
@@ -446,7 +452,6 @@ input:hover{
 	background-size:cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	/*background-image: url("https://i.postimg.cc/Zq93vSw3/homepage-work1-bg.png");*/
 	background-image: url("../img/homepage-work3-bg.png");
 	top: 0;
 	left: 0;
@@ -779,7 +784,7 @@ input:hover{
 		padding-right: 15px;
 	}
 	.headerUL{
-		margin-left: 440px;
+		margin-left: 400px;
 	}
 	.headerUL li{
 		padding-bottom: 24px;
@@ -807,7 +812,7 @@ input:hover{
 	}
 	.profile-intro-picture01{
 		margin-bottom: 20px;
-		margin-left: 130px;
+		margin-left: 140px;
 	}
 	.profile-intro-picture02{
 		display: none;
@@ -1322,9 +1327,6 @@ input:hover{
 	.profile-intro-Text {
 		text-align: center;
 	}
-	.profile-intro-mid {
-		border: 1px solid black;
-	}
 	.mobile{
 		display: block;
 	}
@@ -1397,27 +1399,126 @@ input:hover{
 		margin-bottom: 40px;
 	}
 
+
+
 	.work-finance-APP {
 		width: 100%;
 		height: auto;
 		flex-direction: column;
-		background-image: url(../img/homepage-work2-lg.png);
+		background-image: none;
 	}
 	.work-finance-APP-inside {
 		width: 100%;
+		background: #fff;
+		padding-left: 0px;
+		padding-top: 0px;
 	}
+	.work-finance-APP-Text {
+		width: auto;
+		height: auto;
+	}
+	.work-finance-APP::before {
+		
+		background-image: none;
+	}
+	.mobile767{
+		display: block;
+	}
+	.White-Line-04 {
+		display: none;
+	}
+	.work-finance-APP h4 {
+		padding-left: 350px;
+		color: #1E1E1E;
+	}
+	.work-finance-APP-P {
+		color: #5B5B5B;
+	}
+	.work-finance-APP li {
+		background: #F1F1F1;
+	}
+	.work-finance-APP-P {
+		padding-left: 230px;
+	}
+	.work-finance-APP ul {
+		padding-left: 250px;
+	}
+	.work-finance-APP a {
+		padding-bottom: 20px;
+	}
+	.Introduction-BTN-04{
+		margin-left: 300px;
+	}
+
+
+	.work-medical-beauty-inside {
+		flex-direction: column;
+	}
+	.work-medical-beauty-bg {
+		max-width: 100%;
+		background-image: url(../img/homepage-work3-bg.png);
+
+	}
+	.work-medical-beauty::before {
+		background-image: none;
+	}
+	.work-medical-beauty-Text {
+		max-width: 100%;
+		width: 767px;
+		height: auto;
+		text-align: center;
+		background-color: rgba(255, 255, 255, 100%);
+		padding-left: 0px;
+		padding-bottom: 0px;
+		border-radius: 0px;
+	}
+	.work-medical-beauty-Text h4 {
+		padding-left: 0px;
+		margin-right: 0px;
+		color: #1E1E1E;
+	}
+	.work-medical-beauty-P {
+		color: #5B5B5B;
+		padding-left: 0px;
+	}
+	.work-medical-beauty-Text ul {
+		padding-left: 250px;
+	}
+
+
+	.work-service-item-title {
+		background: #FAFAFA;
+	}
+	.work-service-item {
+		background-image: none;
+		background: #FAFAFA;
+		height: auto;
+	}
+	.work-service-item-text {
+		flex-direction: column;
+	}
+	.work-service-item-top {
+		padding-top: 96px;
+	}
+	.work-service-item-slogon {
+		padding-top: 180px;
+	}
+	.Introduction-BTN-detail {
+		margin-left: 230px;
+	}
+
+
+	.work-featured-articles-inside {
+		flex-direction: column;
+	}
+	.con07-title {
+		width: 100%;
+	}
+	.footer {
+		flex-direction: column;
+	}
+
 }
-
-
-
-/*你好，冒險者，以下是414尺寸會看到的世界*/
-
-
-@media(max-width: 414px)
-{
-
-}
-
 
 
 /*你好，冒險者，以下是375尺寸會看到的世界*/
