@@ -960,7 +960,7 @@ input:hover{
 		width: 340px;
 	}
 	.Introduction-BTN {
-		margin-left: 80px;
+		margin:0 auto;
 	}
 	
 	
@@ -1121,7 +1121,8 @@ input:hover{
 		padding-bottom: 24px;
 	}
 	.Introduction-BTN-detail{
-		margin-left: 450px;
+		/* margin-left: 450px; */
+		margin: 0 auto;
 		margin-bottom: 88px;
 	}
 
@@ -1264,7 +1265,7 @@ input:hover{
 		width: 340px;
 	}
 	.Introduction-BTN {
-		margin-left: 90px;
+		margin:0 auto;
 	}
 
 	.work-finance-APP-inside {
@@ -1278,14 +1279,21 @@ input:hover{
 		width: 380px;
 	}
 	.Introduction-BTN-04 {
-		margin-left: 140px;
+		margin:0 auto;
 	}
+	.work-finance-APP-Text {
+		margin: 0 auto;
+
+	}
+
+
+
 
 	.work-service-item-slogon {
 		padding-top: 120px;
 	}
 	.Introduction-BTN-detail {
-		margin-left: 350px;
+		margin:0 auto;
 	}
 
 	.work-medical-beauty-bg {
@@ -1317,7 +1325,7 @@ input:hover{
         padding-right: 15px;
     }
 	.headerUL {
-        margin-left: 290px;
+        margin-left: 100px;
     }
 	.profile-intro {
 		flex-direction: column-reverse;
@@ -1400,7 +1408,6 @@ input:hover{
 		display: none;
 	}
 	.Introduction-BTN {
-		margin-left: 0px;
 		margin-bottom: 40px;
 	}
 
@@ -1445,18 +1452,25 @@ input:hover{
 		background: #F1F1F1;
 	}
 	.work-finance-APP-P {
-		padding-left: 230px;
+		margin: 0 auto;
+		text-align: center;
 	}
 	.work-finance-APP ul {
-		padding-left: 250px;
+		margin: 0 auto;
+		text-align: center;
+		justify-content: center;
 	}
 	.work-finance-APP a {
 		padding-bottom: 20px;
 	}
 	.Introduction-BTN-04{
-		margin-left: 250px;
+		margin-bottom: 40px;
 	}
 
+
+	.work-medical-beauty-Text li {
+		background-color: #F1F1F1;
+	}
 
 	.work-medical-beauty-inside {
 		flex-direction: column;
@@ -1489,7 +1503,7 @@ input:hover{
 		padding-left: 0px;
 	}
 	.work-medical-beauty-Text ul {
-		padding-left: 250px;
+		margin: 0 auto;
 	}
 
 
@@ -1511,7 +1525,7 @@ input:hover{
 		padding-top: 180px;
 	}
 	.Introduction-BTN-detail {
-		margin-left: 240px;
+		margin: 0 auto;
 	}
 
 
